@@ -9,6 +9,9 @@ mkdir -p build
 # Compile CV with local fonts
 typst compile --root /Users/harishankar/Desktop/My-CV --font-path template/fonts --font-path /path/to/your/custom/fonts template/cv.typ build/cv.pdf
 
+# Compile letter with local fonts
+typst compile --root /Users/harishankar/Desktop/My-CV --font-path template/fonts --font-path /path/to/your/custom/fonts template/letter.typ build/letter.pdf
+
 # Check if compilation was successful
 if [ $? -eq 0 ]; then
     echo "✅ CV compiled successfully to build/cv.pdf"
