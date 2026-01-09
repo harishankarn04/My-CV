@@ -32,7 +32,7 @@
     text(fill: accent-color, weight: "bold", str)
   }
   let letter-header-address-style(str) = {
-    text(fill: gray, size: 0.9em, smallcaps(str))
+    text(fill: black, size: 0.9em, smallcaps(str))
   }
   let letter-date-style(str) = {
     text(size: 0.9em, style: "italic", str)
