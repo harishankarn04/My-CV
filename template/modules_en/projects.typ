@@ -1,5 +1,6 @@
 // Imports
-#import "@preview/brilliant-cv:3.0.0": cv-section, cv-entry
+//#import "@preview/brilliant-cv:3.1.1": cv-section, cv-entry
+#import "../../src/lib.typ": cv-section, cv-entry
 #let metadata = toml("../metadata.toml")
 #let cv-section = cv-section.with(metadata: metadata)
 #let cv-entry = cv-entry.with(metadata: metadata)
@@ -8,41 +9,28 @@
 #cv-section("Projects & Associations")
 
 #cv-entry(
-  title: [Volunteer Data Analyst],
-  society: [ABC Nonprofit Organization],
-  date: [2019 - Present],
-  location: [New York, NY],
+  title: [Machine Learning Project],
+  society: [Context-Aware RAG Chatbot System ( 4 Months)],
+  date: [2025],
+  location: [Bangalore, India],
   description: list(
-    [Analyze donor and fundraising data to identify trends and opportunities for growth],
-    [Create data visualizations and dashboards to communicate insights to the board of directors],
-    [Collaborate with other volunteers to develop and implement data-driven strategies],
-    [Increased donation efficiency by 25% through predictive modeling],
+        [Built a *Retrieval-Augmented Generation (RAG)* chatbot with an automated web scraping and ingestion pipeline using XML sitemaps and HTML parsing.],
+        [Implemented *document chunking and FAISS-based vector retrieval* using *Hugging Face embeddings* to enable relevant, up-to-date context retrieval.],
+        [Integrated *LangChain* to orchestrate embedding, retrieval, and LLM interaction with support for periodic knowledge base refresh.]
+
   ),
-  tags: ("Volunteer Work", "Non-profit", "Social Impact"),
+  tags: ("Python","Web Scrapping", "Langchain", "FAISS", "RAG",  "Hugging Face" )
 )
 
 #cv-entry(
-  title: [Open Source Contributor],
-  society: [Python Data Science Libraries],
-  date: [2018 - Present],
-  location: [Remote],
+  title: [Embedded Systems Engineer],
+  society: [Smart Systems for Automation and Control ( 2 Months )],
+  date: [2024],
+  location: [Bangalore, India],
   description: list(
-    [Contributed to pandas, scikit-learn, and matplotlib projects],
-    [Fixed bugs, improved documentation, and added new features],
-    [Mentored new contributors during Google Summer of Code],
+    [Designed and implemented embedded systems for real-time automation, including a *BLE-controlled Car* and mmWave-based adaptive power control],
+    [Sensor Integrations with micro controller, and real-time control logic implementation],
+    [Built mobile application using *MIT App Inventor* to communicate and control Car via *BLE*]
   ),
-  tags: ("Open Source", "Python", "Community"),
-)
-
-#cv-entry(
-  title: [Machine Learning Research Project],
-  society: [Personal Project],
-  date: [Summer 2020],
-  location: [Remote],
-  description: list(
-    [Developed a novel approach to time series forecasting using transformer architectures],
-    [Published research paper and open-sourced implementation on GitHub],
-    [Achieved 15% improvement over baseline models on benchmark datasets],
-  ),
-  tags: ("Research", "Deep Learning", "Time Series"),
+    tags: ("C","Linux","Think Speak", "Raspberry Pi", "Bluetooth", "Power Management", "Robot Development",  "Edge Detection" )
 )

@@ -116,7 +116,7 @@
     columns: 1fr,
     inset: 0pt,
     stroke: none,
-    row-gutter: 6mm,
+    row-gutter: 4mm,
     if non-latin {
       (styles.first-name)(non-latin-name)
     } else [#(styles.first-name)(first-name) #h(5pt) #(styles.last-name)(last-name)],
@@ -293,7 +293,7 @@
   let highlighted-text = title.slice(0, letters)
   let normal-text = title.slice(letters)
 
-  let section-title-style(str, color: black) = {
+  let section-title-style(str, color: accent-color) = {
     text(size: 16pt, weight: "bold", fill: color, str)
   }
 
@@ -302,7 +302,10 @@
     section-title-style(title, color: accent-color)
   } else {
     if highlighted {
-      section-title-style(highlighted-text, color: accent-color)
+      // First Three letter of heading
+      section-title-style(highlighted-text, color: accent-color) 
+
+      // Rest of the heading
       section-title-style(normal-text, color: black)
     } else {
       section-title-style(title, color: black)

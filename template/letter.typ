@@ -1,32 +1,32 @@
 // Imports
-#import "@preview/brilliant-cv:3.0.0": letter
+//#import "@preview/brilliant-cv:3.1.1": letter
+#import "../src/lib.typ": letter
 #let metadata = toml("./metadata.toml")
 
 
 #show: letter.with(
   metadata,
-  sender-address: "Your Address Here",
-  recipient-name: "Company Name Here",
-  recipient-address: "Company Address Here",
+  sender-address: "Nandi Gardens,
+J P Nagar 9th phase,
+Banaglore 560062e",
+  recipient-name: "Hiring Manager
+  NVidia",
+  recipient-address: "Bangalore",
   date: datetime.today().display(),
   subject: "Subject: Hey!",
   signature: image("assets/signature.png"),
 )
 
+
 Dear Hiring Manager,
 
-I am excited to submit my application for the Senior Data Analyst position at ABC Company. With over 5 years of experience in data analysis and a demonstrated track record of success, I am confident in my ability to make a valuable contribution to your team.
+My name is Hari Shankar, currently in my third year of B.Tech in Electronics and Communication Engineering at Amrita Vishwa Vidyapeetham. I am writing to express my interest in securing an internship at Tata. I’ve always admired how Tata works across so many fields, from engineering to large-scale industry. It’s rare to see such reach and influence, and it makes me want to be a part of it. The idea of learning in an environment where technology is built to solve real problems genuinely excites me.
 
-In my current role as a Data Analyst at XYZ Company, I have gained extensive experience in data mining, quantitative analysis, and data visualization. Through my work, I have developed a deep understanding of statistical concepts and have become adept at using tools such as SQL, Python, and R to extract insights from complex datasets. I have also gained valuable experience in presenting complex data in a visually appealing and easily accessible manner to stakeholders across all levels of an organization.
+During my coursework and project work, I’ve gained hands-on exposure to embedded systems, communication theory, and microelectronics. I’ve worked with microcontrollers, begun exploring PCB design, and developed a strong interest in hardware–software integration. I’ve found that the most valuable learning often happens when something fails and needs debugging, and that curiosity-driven iteration is something I enjoy. I am comfortable working in Python and embedded C, and I thrive in collaborative environments where ideas grow through experimentation and discussion.
 
-I believe that my experience in data analysis makes me an ideal candidate for the Senior Data Analyst position at ABC Company. I am particularly excited about the opportunity to apply my skills to support your organization's mission and drive impactful insights. Your focus on driving innovative solutions to complex problems aligns closely with my own passion for using data analysis to drive positive change in organizations.
+I’m seeking an internship that allows me to apply my skills meaningfully while continuing to learn and challenge myself. Tata stands out to me not only for its technological influence but also for its culture of innovation, social impact, and practical engineering thinking. I would be excited for the chance to contribute while learning from experts.
 
-In my current role, I have been responsible for leading data projects from initiation to completion. I work closely with cross-functional teams to identify business problems and use data to develop solutions that drive business outcomes. I have a proven track record of delivering high-quality work on time and within budget.
+Thank you for considering my application. I would be glad to share more about my work or projects if required, and I would appreciate the opportunity to interview. I look forward to the possibility of contributing and growing with Tata.
 
-Furthermore, I have extensive experience in developing and implementing data-driven solutions that improve business operations. For example, I have implemented predictive models that have improved sales forecasting accuracy by 10%, resulting in significant cost savings. I have also developed dashboards that provide real-time insights into business performance, enabling stakeholders to make more informed decisions.
-
-As a highly motivated and detail-oriented individual, I am confident that I would thrive in the fast-paced and dynamic environment at ABC Company. I am excited about the opportunity to work with a talented team of professionals and to continue developing my skills in data analysis.
-
-Thank you for considering my application. I look forward to the opportunity to discuss my qualifications further.
-
-Sincerely,
+Sincerely, \
+Hari Shankar

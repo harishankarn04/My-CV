@@ -43,7 +43,7 @@ unlink:
 build:
     @echo "🏗️  Building CV template..."
     @mkdir -p temp
-    @typst compile template/cv.typ temp/cv.pdf
+    @typst compile --font-path template/fonts template/cv.typ temp/cv.pdf
     @echo "✅ CV built successfully at temp/cv.pdf"
 
 # Build and open the result
@@ -55,7 +55,7 @@ open: build
 watch:
     @echo "👁️  Watching for changes in template..."
     @mkdir -p temp
-    typst watch template/cv.typ temp/cv.pdf
+    typst watch --font-path template/fonts template/cv.typ temp/cv.pdf
 
 # Sync dependencies to latest versions
 sync:

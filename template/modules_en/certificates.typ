@@ -1,5 +1,6 @@
 // Imports
-#import "@preview/brilliant-cv:3.0.0": cv-section, cv-honor
+//#import "@preview/brilliant-cv:3.1.1": cv-section, cv-honor
+#import "../../src/lib.typ": cv-section, cv-honor
 #let metadata = toml("../metadata.toml")
 #let cv-section = cv-section.with(metadata: metadata)
 #let cv-honor = cv-honor.with(metadata: metadata)
@@ -7,39 +8,56 @@
 
 #cv-section("Certificates & Awards")
 
+// #cv-honor(
+//   date: [2022],
+//   title: [AWS Certified Security - Specialty],
+//   issuer: [Amazon Web Services (AWS)],
+//   url: "https://aws.amazon.com/certification/",
+//   location: [Online],
+// )
 #cv-honor(
-  date: [2022],
-  title: [AWS Certified Security - Specialty],
-  issuer: [Amazon Web Services (AWS)],
-  url: "https://aws.amazon.com/certification/",
+  date: [2025],
+  title: [Building Conversational AI Application],
+  issuer: [NVIDIA],
+  url: "https://drive.google.com/file/d/1eM2tkbLaZki_7JZ4Dg3lW8kldgbd34WA/view?usp=share_link",
+  location: [Online],
+)
+#cv-honor(
+  date: [2024],
+  title: [Semiconductor Technology & Microfabrication],
+  issuer: [IISc Bangalore – CeNSE Summer School],
+  url: "https://drive.google.com/file/d/1qstijq6y88ueDMcEr4KMK7WwIXGaU7u3/view?usp=sharing",
+  location: [On Site],
+)
+
+#cv-honor(
+  date: [2024],
+  title: [Airborne Surveillance Systems Training],
+  issuer: [DRDO, Centre for Airborne Systems (CABS)],
+  url: "https://drive.google.com/file/d/1zNnNimxC7iCU8YA6Z12kzF9BHkU6VKTF/view?usp=sharing",
+  location: [On Site],
+)
+
+#cv-honor(
+  date: [2023],
+  title: [Google Cloud Computing Foundations Certificate],
+  issuer: [Google Cloud Skills],
+  url: "https://www.credly.com/badges/a5e2df60-dcce-4b6f-82bd-bcf1212ca5b3/linked_in_profile",
   location: [Online],
 )
 
 #cv-honor(
-  date: [2021],
-  title: [Data Science Excellence Award],
-  issuer: [XYZ Corporation],
-  location: [San Francisco, CA],
-)
-
-#cv-honor(
-  date: [2020],
-  title: [Applied Data Science with Python Specialization],
-  issuer: [University of Michigan via Coursera],
-  url: "https://coursera.org/specializations/data-science-python",
+  date: [2023],
+  title: [Embedded Programming & Microcontroller Applications],
+  issuer: [Teachnook],
+  url: "https://drive.google.com/file/d/1oKKR940Dt8y-v5sihoKXuE2L3GROxbE0/view?usp=sharing",
   location: [Online],
 )
 
 #cv-honor(
-  date: [2019],
-  title: [Tableau Desktop Certified Professional],
-  issuer: [Tableau Software],
-  url: "https://www.tableau.com/learn/certification",
-)
-
-#cv-honor(
-  date: [2018],
-  title: [SQL Fundamentals Track],
-  issuer: [DataCamp],
+  date: [2023],
+  title: [Essentials of Cybersecurity Certification],
+  issuer: [NSPE],
+  url: "https://drive.google.com/file/d/1abOLbMtunmWc5f1tYcg-5pFViB8RGLP4/view?usp=sharing",
   location: [Online],
 )
