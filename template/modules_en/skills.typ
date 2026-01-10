@@ -53,13 +53,12 @@
 
 #cv-skill(
   type: [Embedded Systems],
-  info: [*STM32 * #h-bar() *NXP i.MX RT
-* #h-bar() *ESP32* #h-bar() *Bare-metal C* #h-bar() IoT #h-bar() Raspberry Pi],
+  info: [*STM32* #h-bar() *NXP i.MX RT* #h-bar() ESP32 #h-bar() Bare-metal C #h-bar() Cross-compiler #h-bar() *GDB* #h-bar() IoT #h-bar() Raspberry Pi],
 )
 
 #cv-skill(
   type: [Software & Tools],
-  info: [*Git* #h-bar() VS Code #h-bar() *MCUXpresso* #h-bar() *STM32CubeIDE* #h-bar() STM32 #h-bar() OOAD #h-bar() MariaDB #h-bar() MS Office Tools],
+  info: [*Git* #h-bar() VS Code #h-bar() *MCUXpresso* #h-bar() *STM32CubeIDE* #h-bar() OOAD #h-bar() MariaDB],
 )
 /*
 #cv-skill(
