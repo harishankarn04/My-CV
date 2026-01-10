@@ -55,7 +55,19 @@ language = "en"
 
     # Decide if you want to inject keywords or not
     inject_keywords = true
-    injected_keywords_list = ["Data Analyst", "GCP", "Python", "SQL", "Tableau"]
+    injected_keywords_list = [
+    "Embedded Systems", "Bare-Metal Programming",
+    "ARM Cortex-M", "Cortex-M4", "Cortex-M7",
+    "STM32", "NXP i.MX RT",
+    "Device Drivers", "Linker Script", "Memory Map", "Interrupts", "DMA",
+    "UART", "SPI", "I2C", "ADC", "GPIO",
+    "Linux",
+    "Docker", "Git", "Make", "CMake", "Meson", "Cross-compilation",
+    "Debugging", "GDB", "OpenOCD", "SWD",
+    "MCUXpresso", "STM32CubeIDE", "GCC",
+    "Embedded C", "C", "Python", "SQL"
+]
+
 
 [personal]
     first_name = "Hari"
@@ -64,10 +76,10 @@ language = "en"
     # The order of this section will affect how the entries are displayed
     # The custom value is for any additional information you want to add, name it as custom-1, custom-2, etc.
     [personal.info]
-        github = "harishankarn04"
+        linkedin = "harishankarn"
         phone = "8197452531"
         email = "harishankarn04@gmail.com"
-        linkedin = "harishankarn"
+        github = "harishankarn04"
         # gitlab = "yunanwg"
         # homepage = "johndoe.dev"
         # orcid = "0000-0000-0000-0000"
