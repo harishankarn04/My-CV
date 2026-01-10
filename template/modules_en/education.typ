@@ -30,7 +30,7 @@
   description: list(
     [Developing a strong foundation in electronics and communication systems, with a focus on integrating hardware and software to build innovative solutions.],
   ),
-  tags: ("Embedded systems","Digital Signal Processing"," IoT","Protocols","Networking"))
+  tags: ("Embedded systems","Digital Signal Processing"," IoT","Protocols","Networking","RTOS"))
   
 #cv-entry(
   title: [Bachelor of Science in Data Science #h-bar() GPA : 7.3],
@@ -39,6 +39,6 @@
   location: [India],
   logo: image("../assets/logos/IIT_Madras_Logo.png"),
   description: list(
-    [Exploring the intersection of data science and technology, applying statistical and computational techniques to analyze complex datasets and develop intelligent solutions.],
+    [Exploring intersection of data science and technology, applying statistical and computational techniques to analyze complex datasets and develop intelligent solutions.],
   ),
     tags: ("Statistical Analysis","Data Visualization"," Machine learning"," Deep Learning","RDBMS","Linux"))
