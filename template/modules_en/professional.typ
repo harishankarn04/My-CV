@@ -41,11 +41,11 @@
   date: [June 2025 – Dec 2025],
   location: [Bangalore, India],
   description: list(
-  [Built firmware for *STM32 (ARM Cortex-M3/M4/M7)* using Embedded C and HAL drivers],
-  [Handled *board bring-up*, debugging, peripheral interfacing, and system-level testing; created a *CMake*-based build system enabling *Docker-based CI/CD* for STM32 bare-metal projects],
-  [Built a *text rendering subsystem* on *NXP i.MX RT1064 (ARM Cortex-M7)* by porting and configuring *HarfBuzz* and *FreeType* to enable Indic script rendering],
-  [Designed the text shaping and glyph rendering flow to operate reliably in a resource-constrained, OS-less embedded environment]
+  [Built firmware for *STM32* using Embedded C and HAL drivers],
+  [Handled *board bring-up*, debugging, peripheral interfacing, and system-level testing; created a *CMake*-based CI/CD build system enabling using *Docker* for bare-metal projects],
+  [Built a *text rendering subsystem* on *NXP i.MX RT1064* by porting and configuring *HarfBuzz* and *FreeType* to enable Indic script rendering],
+  [Designed text shaping and glyph rendering flow to operate reliably in a resource-constrained, OS-less embedded environment]
   ),
-  tags: ("ARM Cortex-M (M4/M7)","NXP i.MX RT1064",
+  tags: ("ARM Cortex-M (M3/M4/M7)","NXP i.MX RT1064",
     "STM32", "Bare-metal", "Linux", "Docker", "Embedded C", "Meson" )
 )

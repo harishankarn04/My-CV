@@ -14,9 +14,9 @@
   date: [2025],
   location: [Bangalore, India],
   description: list(
-        [Built a *Retrieval-Augmented Generation (RAG)* chatbot with an automated web scraping and ingestion pipeline using XML sitemaps and HTML parsing.],
-        [Implemented *document chunking and FAISS-based vector retrieval* using *Hugging Face embeddings* to enable relevant, up-to-date context retrieval.],
-        [Integrated *LangChain* to orchestrate embedding, retrieval, and LLM interaction with support for periodic knowledge base refresh.]
+        [Built a *Retrieval-Augmented Generation (RAG)* chatbot with automated web scraping and ingestion pipeline using sitemaps and HTML parsing],
+        [Implemented *document chunking and FAISS-based vector retrieval* to enable relevant, up-to-date context retrieval],
+        [Integrated *LangChain* to orchestrate embedding, retrieval, and LLM interaction with support for periodic knowledge base refresh]
 
   ),
   tags: ("Python","Web Scrapping", "Langchain", "FAISS", "RAG",  "Hugging Face" )
@@ -28,7 +28,7 @@
   date: [2024],
   location: [Bangalore, India],
   description: list(
-    [Designed and implemented embedded systems for real-time automation, including a *BLE-controlled Car* and mmWave-based adaptive power control],
+    [Designed and implemented embedded system based *BLE-controlled Car* and mmWave-based adaptive power control],
     [Sensor Integrations with micro controller, and real-time control logic implementation],
     [Built mobile application using *MIT App Inventor* to communicate and control Car via *BLE*]
   ),
