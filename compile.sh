@@ -1,23 +1,19 @@
 #!/bin/bash
-
-# delete current directory
-# rm -r build
-
 # Create build directory if it doesn't exist
 mkdir -p build
 
 # Compile CV with local fonts
-typst compile --root /Users/harishankar/Desktop/My-CV --font-path template/fonts --font-path /path/to/your/custom/fonts template/cv.typ build/cv.pdf
-
-# Compile letter with local fonts
-typst compile --root /Users/harishankar/Desktop/My-CV --font-path template/fonts --font-path /path/to/your/custom/fonts template/letter.typ build/letter.pdf
-
-# Check if compilation was successful
+typst compile --root . --font-path template/fonts template/cv.typ build/cv.pdf
 if [ $? -eq 0 ]; then
     echo "✅ CV compiled successfully to build/cv.pdf"
-    # Optional: Open the PDF automatically (uncomment if desired)
-    # open build/cv.pdf
 else
-    echo "❌ Compilation failed"
-    exit 1
+    echo "❌ CV compilation failed"
+fi
+
+# Compile letter with local fonts
+typst compile --root . --font-path template/fonts template/letter.typ build/letter.pdf
+if [ $? -eq 0 ]; then
+    echo "✅ Letter compiled successfully to build/letter.pdf"
+else
+    echo "❌ Letter compilation failed"
 fi
