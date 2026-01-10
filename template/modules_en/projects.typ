@@ -8,8 +8,8 @@
 #cv-section("Projects & Associations")
 
 #cv-entry(
-  title: [Student SDR Systems Engineer],
-  society: [Software Defined Radio - Based Image & Video Transceiver],
+  title: [Embedded Systems Project],
+  society: [Software-Defined Radio Transceiver for Image & Video],
   date: [2025 – Present],
    location: [Amrita Vishwa Vidyapeetham, Bangalore],
   description: list(
@@ -37,7 +37,7 @@
 
 
 #cv-entry(
-  title: [Student Embedded Systems Engineer],
+  title: [Embedded Systems Project],
   society: [BLE-Controlled Embedded Car System
  ( 2 Months )],
   date: [Jan 2024 – May 2024],
