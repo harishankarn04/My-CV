@@ -61,3 +61,11 @@
   url: "https://drive.google.com/file/d/1abOLbMtunmWc5f1tYcg-5pFViB8RGLP4/view?usp=sharing",
   location: [Online],
 )
+
+#cv-honor(
+  date: [2023],
+  title: [Remote Sensing & GIS for Hydro-Meteorological Disasters],
+  issuer: [ISRO],
+  url: "https://drive.google.com/file/d/156W5cdeT7MohU757P-11QhH9KAwURuvR/view?usp=sharing",
+  location: [Online],
+)
