@@ -15,17 +15,17 @@ if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
 fi
 
 # Compile CV with local fonts
-typst compile --root . --font-path template/fonts template/cv.typ build/cv.pdf
+typst compile --root . --font-path template/fonts template/cv.typ build/Hari_Shankar_N.pdf
 if [ $? -eq 0 ]; then
-    echo "✅ CV compiled successfully to build/cv.pdf"
+    echo "✅ CV compiled successfully to build/Hari_Shankar_N.pdf"
 else
     echo "❌ CV compilation failed"
 fi
 
 # Compile letter with local fonts
-typst compile --root . --font-path template/fonts template/letter.typ build/letter.pdf
+typst compile --root . --font-path template/fonts template/letter.typ build/Hari_Shankar_N_letter.pdf
 if [ $? -eq 0 ]; then
-    echo "✅ Letter compiled successfully to build/letter.pdf"
+    echo "✅ Letter compiled successfully to build/Hari_Shankar_N_letter.pdf"
 else
     echo "❌ Letter compilation failed"
 fi
