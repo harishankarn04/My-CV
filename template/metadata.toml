@@ -11,7 +11,7 @@ language = "en"
 
     # Skips are for controlling the spacing between sections and entries
     before_section_skip = "0pt"
-    before_entry_skip = "0pt"
+    before_entry_skip = "1pt"
     before_entry_description_skip = "0pt"
 
     # Optional: sets paper size and margins. Possible values: a4 (default), us-letter

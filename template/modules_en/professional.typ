@@ -41,7 +41,7 @@
   date: [June 2025 – Dec 2025],
   location: [Bangalore, India],
   description: list(
-  [Performed *STM32 board bring-up* using Embedded C and configured communication protocols (*UART*, *SPI*, *I2C*, *ADC*)],
+  [Performed *STM32 board bring-up* using Embedded C and configured communication protocols (*UART, SPI, I2C, ADC*)],
   [*Cross-compiled* firmware for target hardware, resolved firmware issues using *GDB*, and performed system-level validation],
   [Engineered a *CMake*-based CI/CD build system using *Docker* for bare-metal projects],
   [Built a *text rendering subsystem* on *NXP i.MX RT1064* by porting and configuring *HarfBuzz* and *FreeType* to enable *Indic* scripts],
