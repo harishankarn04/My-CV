@@ -69,7 +69,7 @@
 
   #cv-skill(
   type: [OS & Network],
-  info: [ *Linux* #h-bar() Windows#h-bar() Containerization #h-bar() Virtulisation ],
+  info: [ *Linux* #h-bar() Windows#h-bar() Containerization #h-bar() Virtualization ],
 )
 
 #cv-skill(

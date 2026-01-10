@@ -22,15 +22,15 @@
 
 
 #cv-entry(
-  title: [Bachelor in Technology in Electronics and Communication  #h-bar() GPA : 7.23],
+  title: [Bachelor's in Technology in Electronics and Communication  #h-bar() GPA : 7.23],
   society: [Amrita Vishwa Vidyapeetham, Bangalore],
   date: [2023 - 2027],
   location: [India],
   logo: image("../assets/logos/Amrita_Vishwa_Vidyapeetham_-_Logo.png"),
   description: list(
-    [Developing a strong foundation in electronics and communication systems, with a focus on integrating hardware and software to build innovative solutions.],
+    [Developing a strong foundation in electronics and communication systems, with a focus on integrating hardware and software to build innovative solutions],
   ),
-  tags: ("Embedded systems","Digital Signal Processing"," IoT","Protocols","Networking","RTOS"))
+  tags: ("Embedded Systems","Digital Signal Processing","IoT","Protocols","Networking","RTOS"))
   
 #cv-entry(
   title: [Bachelor of Science in Data Science #h-bar() GPA : 7.3],
@@ -39,6 +39,6 @@
   location: [India],
   logo: image("../assets/logos/IIT_Madras_Logo.png"),
   description: list(
-    [Exploring intersection of data science and technology, applying statistical and computational techniques to analyze complex datasets and develop intelligent solutions.],
+    [Exploring the intersection of data science and technology, applying statistical and computational techniques to analyze complex datasets and develop intelligent solutions],
   ),
-    tags: ("Statistical Analysis","Data Visualization"," Machine learning"," Deep Learning","RDBMS","Linux"))
+    tags: ("Statistical Analysis","Data Visualization","Machine Learning","Deep Learning","RDBMS","Linux"))
