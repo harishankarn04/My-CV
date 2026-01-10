@@ -4,7 +4,7 @@
 
 #import "@preview/tidy:0.4.2"
 #import "./docs-template.typ": *
-#let version = toml("/typst.toml").package.version
+#let version = "2.0.0"
 
 #show: template.with(
   title: "brilliant-cv",
