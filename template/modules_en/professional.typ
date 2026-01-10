@@ -36,9 +36,9 @@
 
 #cv-entry(
   title: [Embedded Systems Intern],
-  society: [Digicomm Semiconductors Pvt. Ltd ( 7 Months )],
+  society: [Digicomm Semiconductors Pvt. Ltd ( 8 Months )],
   logo: image("../assets/logos/digicomm-semiconductor.webp"),
-  date: [June 2025 – Dec 2025],
+  date: [June 2025 – Jan 2026],
   location: [Bangalore, India],
   description: list(
   [Performed *STM32 board bring-up* using Embedded C and configured communication protocols (*UART, SPI, I2C, ADC*)],

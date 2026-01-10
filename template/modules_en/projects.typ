@@ -8,37 +8,24 @@
 #cv-section("Projects & Associations")
 
 #cv-entry(
-  title: [SDR Systems Engineer],
-  society: [SDR-Based Image & Video Transceiver],
+  title: [Student SDR Systems Engineer],
+  society: [Software Defined Radio - Based Image & Video Transceiver],
   date: [2025 – Present],
-  location: [Bangalore, India],
+   location: [Amrita Vishwa Vidyapeetham, Bangalore],
   description: list(
-  [Designing and implementing an *SDR-based transceiver* for real-time *image and video transmission* using *GNU Radio*],
-  [Implementing the end-to-end communication chain (*encoding → modulation → channel → demodulation → decoding*)],
-  [Evaluating modulation schemes (*GMSK, QAM, OFDM*) and analyzing *noise sensitivity, packet loss, synchronization, and QoS metrics*],
-  [Integrating *video compression (H.264, MJPEG)* and studying *bandwidth–latency–quality trade-offs* for wireless transmission]
+  [Designing and implementing an SDR-based transceiver for real-time image and video transmission using *GNU Radio*],
+  [Implementing the end-to-end communication chain (encoding → modulation → channel → demodulation → decoding)],
+  [Evaluating modulation schemes (*GMSK, QAM, OFDM*) and analyzing noise sensitivity, packet loss, synchronization, and QoS metrics],
+  [Integrating video compression (*H.264, MJPEG*) and studying bandwidth–latency–quality trade-offs for wireless transmission]
 ),
-    tags: ("SDR", "GNU Radio", "GMSK", "OFDM", "QPSK", "QAM", "H.264", "MJPEG", "GStreamer", "DSP", "Wireless Communication", "USRP")
-)
-#cv-entry(
-  title: [Member – Digital Forensics],
-  society: [Team bi0s - Cybersecurity enthusiast club (1 year 2 months)],
-  date: [Nov 2023 – Dec 2024],
-  location: [Amrita Vishwa Vidyapeetham, India],
-  description: list(
-  [Contributed as part of the *forensics team*, gaining exposure to *cybersecurity workflows, Linux environments, and investigative practices*],
-  [Participated in internal training and introductory problem-solving related to *digital forensics and security fundamentals*],
-  [Worked on practice exercises and guided tasks to understand *basic evidence handling and forensic processes*]
-),
-
-  tags: ("Digital Forensics", "Cybersecurity", "Linux", "Security Fundamentals")
+    tags: ("SDR", "GNU Radio", "GStreamer", "DSP", "Wireless Communication", "USRP")
 )
 
 #cv-entry(
   title: [Machine Learning Project],
   society: [Context-Aware RAG Chatbot System ( 4 Months )],
   date: [Jan 2025 – May 2025],
-  location: [Bangalore, India],
+   location: [Amrita Vishwa Vidyapeetham, Bangalore],
   description: list(
         [Deployed a RAG chatbot with web scraping and an ingestion pipeline using sitemaps & HTML parsing],
         [Developed *document chunking and FAISS-based vector retrieval* to enable relevant, up-to-date context retrieval],
@@ -50,14 +37,29 @@
 
 
 #cv-entry(
-  title: [Embedded Systems Engineer],
-  society: [Smart Systems for Automation and Control ( 2 Months )],
+  title: [Student Embedded Systems Engineer],
+  society: [BLE-Controlled Embedded Car System
+ ( 2 Months )],
   date: [Jan 2024 – May 2024],
-  location: [Bangalore, India],
+   location: [Amrita Vishwa Vidyapeetham, Bangalore],
   description: list(
-    [Designed and prototyped an embedded-system-based *BLE-controlled car* and mmWave-based adaptive power control],
+    [Designed and prototyped an embedded-system-based *BLE-controlled car* and adaptive power control],
     [Integrated sensors with microcontroller and established real-time control logic],
-    [Created a mobile application using *MIT App Inventor* to communicate with and control the car via *BLE*]
+    [Created a mobile application using *MIT App Inventor* to communicate with and control the car via BLE]
   ),
     tags: ("C","Linux","ThingSpeak", "Raspberry Pi", "Bluetooth", "Power Management", "Robot Development",  "Edge Detection" )
+)
+
+#cv-entry(
+  title: [Member – Digital Forensics],
+  society: [Team bi0s - Cybersecurity Research Community (1 year 2 months)],
+  date: [Nov 2023 – Dec 2024],
+   location: [Amrita Vishwa Vidyapeetham, Bangalore],
+  description: list(
+  [Contributed as part of the forensics team, gaining exposure to *cybersecurity workflows and investigative practices*],
+  [Participated in internal training and introductory problem-solving related to *digital forensics* and security fundamentals],
+  [Worked on practice exercises and guided tasks to understand basic evidence handling and forensic processes]
+),
+
+  tags: ("Digital Forensics", "Cybersecurity", "Kali Linux", "Security Fundamentals", "WireShark")
 )

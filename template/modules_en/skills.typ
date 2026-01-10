@@ -58,7 +58,7 @@
 
 #cv-skill(
   type: [Software & Tools],
-  info: [*Git* #h-bar() VS Code #h-bar() *MCUXpresso* #h-bar() *STM32CubeIDE* #h-bar() OOAD #h-bar() MariaDB],
+  info: [*Git* #h-bar() VS Code #h-bar() *MCUXpresso* #h-bar() *STM32CubeIDE* #h-bar() GNU Radio #h-bar() OOAD #h-bar() MariaDB],
 )
 /*
 #cv-skill(
@@ -69,12 +69,12 @@
 
   #cv-skill(
   type: [OS & Network],
-  info: [ *Linux* #h-bar() Windows#h-bar() Containerization #h-bar() Virtualization ],
+  info: [ *Linux* #h-bar() Windows #h-bar() Containerization #h-bar() Virtualization ],
 )
 
 #cv-skill(
   type: [Cloud & Security],
-  info: [*GCP* #h-bar() AWS #h-bar()  Basic Cybersecurity #h-bar() Open Source Security Tools #h-bar() CTF],
+  info: [*GCP* #h-bar() AWS #h-bar()  Basic Cybersecurity #h-bar() Open Source Security Tools #h-bar() WireShark],
 )
 
 #cv-skill(
