@@ -440,7 +440,9 @@
 
   if entry-type == "full" {
     table(
-      columns: (1fr, date-width),
+      // uncomment to get back default settings
+      // columns: (1fr, date-width),
+      columns: (1fr, auto), // modified to accomodate longer names
       inset: 0pt,
       stroke: none,
       gutter: 6pt,
@@ -564,7 +566,9 @@
   if entry-type == "full" {
     // Full entry layout (original cv-entry logic)
     table(
-      columns: (1fr, date-width),
+      // uncomment to get back default settings
+      // columns: (1fr, date-width),
+      columns: (1fr, auto), // modified to accomodate longer names
       inset: 0pt,
       stroke: 0pt,
       gutter: 6pt,
