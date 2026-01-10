@@ -12,12 +12,12 @@
 #let _header-styles(header-font, regular-colors, accent-color, header-info-font-size) = (
   first-name: (str) => text(
     font: header-font,
-    size: 32pt,
+    size: 30pt,
     weight: "light",
     fill: regular-colors.darkgray,
     str,
   ),
-  last-name: (str) => text(font: header-font, size: 32pt, weight: "bold", str),
+  last-name: (str) => text(font: header-font, size: 30pt, weight: "bold", str),
   info: (str) => text(size: header-info-font-size, fill: accent-color, str),
   quote: (str) => text(size: 10pt, weight: "medium", style: "italic", fill: accent-color, str),
 )
@@ -891,7 +891,7 @@
     columns: (16%, 1fr, 15%),
     inset: 0pt,
     column-gutter: 10pt,
-    align: horizon,
+    align: (horizon),
     stroke: none,
     honor-date-style(date),
     if issuer == "" {
