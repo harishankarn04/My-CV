@@ -1,5 +1,5 @@
 
-#let h-bar() = [#h(5pt) | #h(5pt)]
+#let h-bar() = [#h(3pt) | #h(3pt)]
 
 #let _latin-font-list = (
   "Source Sans 3",
