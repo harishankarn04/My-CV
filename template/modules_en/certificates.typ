@@ -6,7 +6,7 @@
 #let cv-honor = cv-honor.with(metadata: metadata)
 
 
-#cv-section("Certificates & Awards")
+#cv-section("Trainings & Certifications")
 
 // #cv-honor(
 //   date: [2022],
@@ -25,7 +25,7 @@
 #cv-honor(
   date: [2024],
   title: [Semiconductor Technology & Microfabrication],
-  issuer: [CeNSE Summer School - IISc Bangalore],
+  issuer: [IISc Bangalore],
   url: "https://drive.google.com/file/d/1qstijq6y88ueDMcEr4KMK7WwIXGaU7u3/view?usp=sharing",
   location: [On Site],
 )
