@@ -83,7 +83,7 @@
         if k == "email" {
           link("mailto:" + v)[#v]
         } else if k == "linkedin" {
-          link("https://www.linkedin.com/in/" + v)[#v]
+          link("https://in.linkedin.com/in/" + v)[#v]
         } else if k == "github" {
           link("https://github.com/" + v)[#v]
         } else if k == "gitlab" {
@@ -409,7 +409,7 @@
       radius: 3pt,
       tag-style(tag),
     )
-    h(5pt)
+    h(4pt)
   }
 }
 
@@ -791,7 +791,7 @@
   }
 
   table(
-    columns: (17%, 1fr),
+    columns: (20%, 1fr),
     inset: 0pt,
     column-gutter: 10pt,
     stroke: none,
