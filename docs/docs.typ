@@ -142,10 +142,10 @@ last_name = "Doe"
 # The order of this section will affect how the entries are displayed
 # The custom value is for any additional information you want to add
 [personal.info]
-github = "yunanwg"
-phone = "+33 6 12 34 56 78"
-email = "john.doe@me.org"
-linkedin = "johndoe"
+# github = "yunanwg"
+# phone = "+33 6 12 34 56 78"
+# email = "john.doe@me.org"
+# linkedin = "johndoe"
 # gitlab = "yunanwg"
 # homepage: "jd.me.org"
 # orcid = "0000-0000-0000-0000"
