@@ -21,11 +21,11 @@ language = "en"
     #date_width = "3.6cm"
 
     [layout.fonts]
-        regular_fonts = ["Source Sans Pro", "Source Sans 3"]
-        header_font = "Roboto"
+        # regular_fonts = ["Source Sans Pro", "Source Sans 3"]
+        # header_font = "Roboto"
 
-        # regular_fonts = ["Arial"]
-        # header_font = "Arial"
+        regular_fonts = ["Arial"]
+        header_font = "Arial"
 
     [layout.header]
         # Optional values: left, center, right
@@ -74,7 +74,7 @@ language = "en"
 
 [personal]
     first_name = "Hari"
-    last_name = "Shankar N "
+    last_name = "Shankar N"
 
     # The order of this section will affect how the entries are displayed
     # The custom value is for any additional information you want to add, name it as custom-1, custom-2, etc.
