@@ -24,6 +24,9 @@ language = "en"
         regular_fonts = ["Source Sans Pro", "Source Sans 3"]
         header_font = "Roboto"
 
+        # regular_fonts = ["Arial"]
+        # header_font = "Arial"
+
     [layout.header]
         # Optional values: left, center, right
         header_align = "left"
@@ -77,7 +80,7 @@ language = "en"
     # The custom value is for any additional information you want to add, name it as custom-1, custom-2, etc.
     [personal.info]
         linkedin = "harishankarn"
-        phone = "8197452531"
+        phone = "+91 8197452531"
         email = "harishankarn04@gmail.com"
         github = "harishankarn04"
         # gitlab = "yunanwg"
