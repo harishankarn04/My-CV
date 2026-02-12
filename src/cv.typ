@@ -12,12 +12,12 @@
 #let _header-styles(header-font, regular-colors, accent-color, header-info-font-size) = (
   first-name: (str) => text(
     font: header-font,
-    size: 30pt,
+    size: 25pt,
     weight: "light",
     fill: regular-colors.darkgray,
     str,
   ),
-  last-name: (str) => text(font: header-font, size: 30pt, weight: "bold", str),
+  last-name: (str) => text(font: header-font, size: 25pt, weight: "bold", str),
   info: (str) => text(size: header-info-font-size, fill: accent-color, str),
   quote: (str) => text(size: 10pt, weight: "medium", style: "italic", fill: accent-color, str),
 )
