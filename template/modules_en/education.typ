@@ -27,10 +27,10 @@
   date: [July 2023 - Present],
   location: [Bangalore, India],
   logo: image("../assets/logos/Amrita_Vishwa_Vidyapeetham_-_Logo.png"),
-  // description: list(
-  //   [Developing a strong foundation in electronics and communication systems, with a focus on integrating hardware, circuit design, signal processing and software to build innovative solutions across embedded systems and real-time applications],
-  //   /*[Gained hands-on experience in circuit design, signal processing, and IoT development through projects involving microcontroller programming, communication protocols, and system-level validation]*/
-  // )
+  description: list(
+    [Developing a strong foundation in electronics and communication systems, with a focus on integrating hardware, circuit design, signal processing and software to build innovative solutions across embedded systems and real-time applications],
+    /*[Gained hands-on experience in circuit design, signal processing, and IoT development through projects involving microcontroller programming, communication protocols, and system-level validation]*/
+  ),
   
   tags: ("Embedded Systems","Digital Signal Processing","IoT","Protocols","Networking","RTOS", "C", "Wireshark"))
   
@@ -40,7 +40,7 @@
   date: [July 2023 - Present],
   location: [Madras, India],
   logo: image("../assets/logos/IIT_Madras_Logo.png"),
-  // description: list(
-  //   [Exploring the intersection of data science and technology, applying statistical and computational techniques to analyze complex datasets and develop intelligent solutions],
-  // ),
+  description: list(
+    [Exploring the intersection of data science and technology, applying statistical and computational techniques to analyze complex datasets and develop intelligent solutions],
+  ),
     tags: ("Statistical Analysis","Data Visualization","Machine Learning","Deep Learning","RDBMS","Linux"))
