@@ -684,11 +684,11 @@
 /// - awesome-colors (array): (optional) the awesome colors of the CV.
 /// -> content
 #let cv-entry(
-  title: "Title",
-  society: "Society",
-  date: "Date",
-  location: "Location",
-  description: "Description",
+  title: "",
+  society: "",
+  date: "",
+  location: "",
+  description: "",
   logo: "",
   tags: (),
   metadata: metadata,

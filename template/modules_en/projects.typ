@@ -8,58 +8,58 @@
 #cv-section("Projects & Associations")
 
 #cv-entry(
-  title: [Embedded Systems Project],
+  title: [Embedded Systems Developer (Academic Project)],
   society: [Software-Defined Radio Transceiver for Image & Video],
-  date: [2025 – Present],
+  date: [July 2025 – Present],
    location: [Amrita Vishwa Vidyapeetham, Bangalore],
   description: list(
-  [Designing and implementing an SDR-based transceiver for real-time image and video transmission using *GNU Radio*],
-  [Implementing the end-to-end communication chain (encoding → modulation → channel → demodulation → decoding)],
-  [Evaluating modulation schemes (*GMSK, QAM, OFDM*) and analyzing noise sensitivity, packet loss, synchronization, and QoS metrics],
+  [Designing and develop SDR-based transceiver for real-time image and video transmission using *GNU Radio*],
+  [Implementing end-to-end communication chain (encoding → modulation → channel → demodulation → decoding)],
+  [Evaluating modulation schemes (*GMSK, QAM, OFDM*), analyzing noise sensitivity, packet loss, synchronization, and QoS],
   [Integrating video compression (*H.264, MJPEG*) and studying bandwidth–latency–quality trade-offs for wireless transmission]
 ),
-    tags: ("SDR", "GNU Radio", "GStreamer", "DSP", "Wireless Communication", "USRP")
+    tags: ("Linux", "SDR", "GNU Radio", "GStreamer", "DSP", "Wireless Communication", "USRP" )
 )
 
 #cv-entry(
-  title: [Machine Learning Project],
+  title: [Machine Learning Developer (Academic Project)],
   society: [Context-Aware RAG Chatbot System ( 4 Months )],
   date: [Jan 2025 – May 2025],
    location: [Amrita Vishwa Vidyapeetham, Bangalore],
   description: list(
         [Deployed a RAG chatbot with web scraping and an ingestion pipeline using sitemaps & HTML parsing],
         [Developed *document chunking and FAISS-based vector retrieval* to enable relevant, up-to-date context retrieval],
-        [Integrated *LangChain* to orchestrate embedding, retrieval, and LLM interaction with support for periodic knowledge base refresh],
-        [Built and tested a local web interface to query real data from the university website, handling the project from start to finish]
+        [*LangChain* orchestration for embedding, retrieval, and LLM interaction with support for periodic knowledge base refresh],
+        [Built and tested local web interface to query real data from the university website, handling the project from start to finish]
   ),
   tags: ("Python","Web Scraping", "LangChain", "FAISS", "RAG", "Hugging Face" )
 )
 
 
-#cv-entry(
-  title: [Embedded Systems Project],
-  society: [BLE-Controlled Embedded Car System
- ( 2 Months )],
-  date: [Jan 2024 – May 2024],
-   location: [Amrita Vishwa Vidyapeetham, Bangalore],
-  description: list(
-    [Designed and prototyped an embedded-system-based *BLE-controlled car* and adaptive power control],
-    [Integrated sensors with microcontroller and established real-time control logic],
-    [Created a mobile application using *MIT App Inventor* to communicate with and control the car via BLE]
-  ),
-    tags: ("C","Linux","ThingSpeak", "Raspberry Pi", "Bluetooth", "Power Management", "Robot Development",  "Edge Detection" )
-)
+// #cv-entry(
+//   title: [Embedded Systems Developer (Academic Project)],
+//   society: [BLE-Based Embedded Car System
+//  ( 2 Months )],
+//   date: [Jan 2024 – May 2024],
+//    location: [Amrita Vishwa Vidyapeetham, Bangalore],
+//   description: list(
+//     [Designed and prototyped an embedded-system-based *BLE-controlled car* and adaptive power management],
+//     [Integrated sensors with microcontroller and established real-time actuation and decision logic],
+//     [Created a mobile application using *MIT App Inventor* to communicate with and control the car via BLE]
+//   ),
+//     tags: ("C","Linux","ThingSpeak", "Raspberry Pi", "Bluetooth", "Robot Development",  "Edge Detection" )
+// )
 
-#cv-entry(
-  title: [Member – Digital Forensics],
-  society: [Team bi0s - Cybersecurity Research Community (1 year 2 months)],
-  date: [Nov 2023 – Dec 2024],
-   location: [Amrita Vishwa Vidyapeetham, Bangalore],
-  description: list(
-  [Contributed as part of the forensics team, gaining exposure to *cybersecurity workflows and investigative practices*],
-  [Participated in internal training and introductory problem-solving related to *digital forensics* and security fundamentals],
-  [Worked on practice exercises and guided tasks to understand basic evidence handling and forensic processes]
-),
+// #cv-entry(
+//   title: [Member – Digital Forensics],
+//   society: [Team bi0s - Cybersecurity Research Community (1 year 2 months)],
+//   date: [Nov 2023 – Dec 2024],
+//    location: [Amrita Vishwa Vidyapeetham, Bangalore],
+//   description: list(
+//   [Contributed as part of the forensics team, gaining exposure to *cybersecurity workflows and investigative practices*],
+//   [Participated in internal training and introductory problem-solving related to *digital forensics* and security],
+//   [Worked on practice exercises and guided tasks to understand basic evidence handling and forensic processes]
+// ),
 
-  tags: ("Digital Forensics", "Cybersecurity", "Kali Linux", "Security Fundamentals", "WireShark")
-)
+//   tags: ("Digital Forensics", "Cybersecurity", "Kali Linux", "Security Fundamentals", "WireShark")
+// )
