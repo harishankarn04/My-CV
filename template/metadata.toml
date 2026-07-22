@@ -8,6 +8,7 @@ language = "en"
 # preview cannot pass --input. Set to "full", "college", or any profile defined
 # at the bottom of this file, then save — the preview updates immediately.
 # ./compile.sh always overrides this, so builds are unaffected.
+
 preview_profile = "college"
 
 [layout]
@@ -155,7 +156,7 @@ preview_profile = "college"
     hide = []
 
 [profiles.college]
-    hide = ["rag", "ble-car", "bi0s"]
+    hide = ["rag", "ble-car", "bi0s","Optimus"]
 
 #  Add new profiles with here
 #   [profiles.'profile_name']
