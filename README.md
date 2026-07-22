@@ -18,7 +18,7 @@ Requires [Typst](https://github.com/typst/typst). Everything else is plain
 ## Profiles (tailoring the CV per application)
 
 One branch produces every variant. Entries are **visible by default**; a
-profile only lists what it *hides*, at the bottom of `template/metadata.toml`:
+profile only lists what it *hides*, near the top of `template/metadata.toml`:
 
 ```toml
 [profiles.college]

@@ -179,5 +179,5 @@ END {
             printf "\n"
         }
     }
-    printf "\n  Edit the 'hide' lists at the bottom of template/metadata.toml.\n\n"
+    printf "\n  Edit the 'hide' lists near the top of template/metadata.toml.\n\n"
 }

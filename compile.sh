@@ -2,7 +2,7 @@
 # Build the CV, optionally as a tailored profile.
 #
 # Entries in modules_en/ are VISIBLE BY DEFAULT. A profile only lists what it
-# HIDES, in the [profiles.*] section at the bottom of template/metadata.toml.
+# HIDES, in the [profiles.*] section near the top of template/metadata.toml.
 # Adding a new skill/project/cert therefore needs no config change at all.
 #
 #   ./compile.sh              full CV

@@ -4,12 +4,30 @@
 # INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
 language = "en"
 
-# Which profile the LIVE EDITOR PREVIEW shows (Tinymist / VS Code), since the
-# preview cannot pass --input. Set to "full", "college", or any profile defined
-# at the bottom of this file, then save — the preview updates immediately.
-# ./compile.sh always overrides this, so builds are unaffected.
-
+# Which variant the live editor preview shows (Tinymist / VS Code cannot pass
+# --input). Must be one of the [profiles.*] names defined just below.
+# Does not affect ./compile.sh.
 preview_profile = "college"
+
+# ── PROFILES ─────────────────────────────────────────────────────────────────
+# Tailored variants of this CV. Entries are VISIBLE BY DEFAULT — list an id
+# under `hide` to cut it from that variant only. Adding a new skill, project or
+# certificate needs no change here.
+#
+#   ./compile.sh --list      every id, and which variants hide it
+#   ./compile.sh college     build a variant
+#
+# An id that matches no entry fails the build instead of silently doing nothing.
+
+[profiles.full]
+    hide = []
+
+[profiles.college]
+    hide = ["rag", "ble-car", "bi0s", "Optimus"]
+
+# Add new profiles here:
+#   [profiles.nvidia]
+#       hide = []
 
 [layout]
     # Optional values: skyblue, red, nephritis, concrete, darknight
@@ -137,27 +155,3 @@ preview_profile = "college"
     header_quote = "Analyste de données expérimenté à la recherche d'un emploi à temps plein disponible dès maintenant"
     cv_footer = "Résumé"
     letter_footer = "Lettre de motivation"
-
-
-# ─────────────────────────────────────────────────────────────────────────────
-#  PROFILES  —  tailored variants of this CV
-#
-#  Entries are VISIBLE BY DEFAULT. Listing an id under `hide` removes it from
-#  that profile only. Adding a new skill/project/cert needs NO change here.
-#
-#      ./compile.sh --list        show every id and what each profile hides
-#      ./compile.sh college       build the college variant
-#      ./compile.sh               build the full CV
-#
-#  A typo in an id below fails the build rather than silently doing nothing.
-# ─────────────────────────────────────────────────────────────────────────────
-
-[profiles.full]
-    hide = []
-
-[profiles.college]
-    hide = ["rag", "ble-car", "bi0s", "Optimus"]
-
-#  Add new profiles with here
-#   [profiles.'profile_name']
-#       hide = []
