@@ -7,10 +7,11 @@
 
 #cv-section("Projects & Associations")
 
+// ------------ SDR ------------ //
 #cv-entry(
   title: [Embedded Systems Developer (Academic Project)],
-  society: [Software-Defined Radio Transceiver for Image & Video],
-  date: [July 2025 – Present],
+  society: [Software-Defined Radio Transceiver for Image & Video ( 10 Months )],
+  date: [Jul 2025 – April 2026],
    location: [Amrita Vishwa Vidyapeetham, Bangalore],
   description: list(
   [Designing and develop SDR-based transceiver for real-time image and video transmission using *GNU Radio*],
@@ -20,7 +21,10 @@
 ),
     tags: ("Linux", "SDR", "GNU Radio", "GStreamer", "DSP", "Wireless Communication", "USRP" )
 )
+// ------------ SDR ------------ //
 
+
+// ------------ RAG ------------ //
 #cv-entry(
   title: [Machine Learning Developer (Academic Project)],
   society: [Context-Aware RAG Chatbot System ( 4 Months )],
@@ -34,8 +38,28 @@
   ),
   tags: ("Python","Web Scraping", "LangChain", "FAISS", "RAG", "Hugging Face" )
 )
+// ------------ RAG ------------ //
 
 
+// ------------ DRONE ------------ //
+#cv-entry(
+  title: [Embedded Systems Developer (Academic Project)],
+  society: [Precision Landing of Drone in Dynamic and Static Platforms ( Ongoing )],
+  date: [Jul 2026 – Present],
+  location: [Amrita Vishwa Vidyapeetham, Bangalore],
+  description: list(
+    [Started an academic project to develop an *autonomous drone system* for flight-path following and *precision landing*],
+    [Currently in the ideation phase, exploring approaches for *landing accuracy and platform detection*],
+    [Considering a *beacon-based navigation approach* as one option under evaluation for final descent],
+    [Reviewing *flight controller hardware options*, including Pixhawk, for future system integration]
+  ),
+
+  tags: ("Drone Systems", "Autonomous Systems", "Embedded Systems", "Flight Controllers", "Navigation Systems")
+)
+// ------------ DRONE ------------ //
+
+
+// ------------ BLE CAR ------------ //
 // #cv-entry(
 //   title: [Embedded Systems Developer (Academic Project)],
 //   society: [BLE-Based Embedded Car System
@@ -49,7 +73,10 @@
 //   ),
 //     tags: ("C","Linux","ThingSpeak", "Raspberry Pi", "Bluetooth", "Robot Development",  "Edge Detection" )
 // )
+// ------------ BLE CAR ------------ //
 
+
+// ------------ BI0S ------------ //
 // #cv-entry(
 //   title: [Member – Digital Forensics],
 //   society: [Team bi0s - Cybersecurity Research Community (1 year 2 months)],
@@ -63,3 +90,4 @@
 
 //   tags: ("Digital Forensics", "Cybersecurity", "Kali Linux", "Security Fundamentals", "WireShark")
 // )
+// ------------ BI0S ------------ //
