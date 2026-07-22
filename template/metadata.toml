@@ -4,6 +4,12 @@
 # INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
 language = "en"
 
+# Which profile the LIVE EDITOR PREVIEW shows (Tinymist / VS Code), since the
+# preview cannot pass --input. Set to "full", "college", or any profile defined
+# at the bottom of this file, then save — the preview updates immediately.
+# ./compile.sh always overrides this, so builds are unaffected.
+preview_profile = "full"
+
 [layout]
     # Optional values: skyblue, red, nephritis, concrete, darknight
     # You can also use a custom color by hex code i.e. "#1E90FF"
@@ -149,7 +155,7 @@ language = "en"
     hide = []
 
 [profiles.college]
-    hide = ["ble-car", "bi0s"]
+    hide = ["rag", "ble-car", "bi0s"]
 
 #  Add new profiles with here
 #   [profiles.'profile_name']

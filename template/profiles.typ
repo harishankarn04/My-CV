@@ -17,10 +17,19 @@
 //    ./compile.sh college
 // ─────────────────────────────────────────────────────────────────────────────
 
-// Chosen at compile time via `typst compile --input profile=college`.
-#let profile = sys.inputs.at("profile", default: "full")
+#let _meta = toml("metadata.toml")
 
-#let _profiles = toml("metadata.toml").at("profiles", default: (:))
+// compile.sh passes --input profile=NAME, which always wins.
+//
+// Editor previews (Tinymist / VS Code) cannot pass --input, so they fall back
+// to `preview_profile` in metadata.toml. Change that one line to preview a
+// different variant live; it does not affect what compile.sh produces.
+#let profile = sys.inputs.at(
+  "profile",
+  default: _meta.at("preview_profile", default: "full"),
+)
+
+#let _profiles = _meta.at("profiles", default: (:))
 
 // Unknown profile name is a hard error — otherwise a typo in the profile name
 // silently builds the full CV and you mail out the wrong document.
