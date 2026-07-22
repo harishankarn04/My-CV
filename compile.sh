@@ -14,11 +14,16 @@ set -u
 cd "$(dirname "$0")"
 mkdir -p build
 
-HELPER="tools/profiles.py"
+HELPER="tools/profiles.awk"
+META="template/metadata.toml"
+MODULES="template/modules_en"
+
+# awk keeps this dependency-free: no python, no jq, no extra installs.
+helper() { mode="$1"; shift; awk -v mode="$mode" "$@" -f "$HELPER" $META $MODULES/*.typ; }
 
 case "${1:-}" in
     --list|-l)
-        python3 "$HELPER" list
+        helper list
         exit 0
         ;;
     -h|--help)
@@ -29,7 +34,7 @@ case "${1:-}" in
         echo "  ./compile.sh --list       show every id and per-profile visibility"
         echo "  ./compile.sh -d           also build the docs"
         echo ""
-        echo "Available profiles: $(python3 "$HELPER" names | tr '\n' ' ')"
+        echo "Available profiles: $(helper names | tr '\n' ' ')"
         exit 0
         ;;
 esac
@@ -39,7 +44,7 @@ if [ "${1:-}" != "" ] && [ "${1:-}" != "-d" ]; then PROFILE="$1"; shift; fi
 
 # Refuse to build on an unknown profile name or a hide-list id that matches no
 # entry — both mean the PDF would quietly differ from what you intended.
-python3 "$HELPER" check "$PROFILE" || exit 1
+helper check -v target="$PROFILE" || exit 1
 
 if [ "$PROFILE" = "full" ]; then
     OUT="build/Hari_Shankar_N.pdf"
@@ -51,9 +56,9 @@ typst compile --root . --font-path template/fonts \
     --input profile="$PROFILE" template/cv.typ "$OUT" || {
         echo "❌ CV compilation failed"; exit 1; }
 
-PAGES=$(python3 -c "
-import re
-print(len(re.findall(rb'/Type\s*/Page[^s]', open('$OUT','rb').read())))" 2>/dev/null || echo "?")
+# Page count straight out of the PDF page tree — cosmetic, so a miss is harmless.
+PAGES=$(LC_ALL=C strings "$OUT" | grep -o '/Count [0-9][0-9]*' | head -1 | awk '{print $2}')
+[ -z "$PAGES" ] && PAGES="?"
 echo "✅ [$PROFILE] CV -> $OUT  ($PAGES page(s))"
 
 typst compile --root . --font-path template/fonts \

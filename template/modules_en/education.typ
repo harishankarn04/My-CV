@@ -28,7 +28,7 @@
   society: [Amrita Vishwa Vidyapeetham],
   date: [Jul 2023 - Present],
   location: [Bangalore, India],
-  logo: image("../assets/logos/Amrita_Vishwa_Vidyapeetham_-_Logo.png"),
+  logo: image("../assets/logos/Amrita_Vishwa_Vidyapeetham_Logo.png"),
   /*description: list(
     [Developing a strong foundation in electronics and communication systems, with a focus on integrating hardware, circuit design, signal processing and software to build innovative solutions across embedded systems and real-time applications],
     [Gained hands-on experience in circuit design, signal processing, and IoT development through projects involving microcontroller programming, communication protocols, and system-level validation]
