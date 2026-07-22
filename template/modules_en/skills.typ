@@ -6,6 +6,10 @@
 #import "../profiles.typ": on
 
 
+// The Skills section moves as ONE unit: if it does not fit in the remaining
+// space, the whole section (heading included) goes to the next page rather
+// than stranding a single skill row on its own.
+#block(breakable: false, width: 100%)[
 #cv-section("Skills")
 
 // #cv-skill-with-level(
@@ -88,3 +92,4 @@
   type: [Personal Traits],
   info: [*Team Player* #h-bar() Problem Solving #h-bar() *Communicator* #h-bar()  Accountability #h-bar() Guitarist #h-bar() Artist],
 ) }
+]

@@ -298,6 +298,9 @@
   }
 
   v(before-section-skip)
+  // sticky: a section heading must never be the last thing on a page — it is
+  // pulled to the next page along with the entry that follows it.
+  block(sticky: true, width: 100%, {
   if non-latin {
     section-title-style(title, color: accent-color)
   } else {
@@ -313,6 +316,7 @@
   }
   h(2pt)
   box(width: 1fr, line(stroke: 0.9pt, length: 100%))
+  })
 }
 
 /// Prepare common entry parameters
@@ -438,7 +442,10 @@
 
   v(before-entry-skip)
 
-  if entry-type == "full" {
+  // Atomic: a CV entry is a single unit of meaning, so it is never split
+  // across a page boundary. If it does not fit, the whole entry moves to the
+  // next page — deliberate whitespace reads better than a severed entry.
+  block(breakable: false, width: 100%, if entry-type == "full" {
     table(
       // uncomment to get back default settings
       // columns: (1fr, date-width),
@@ -531,7 +538,7 @@
       )
       _create-entry-tag-list(tags, styles.tag)
     }
-  }
+  })
 }
 
 /// Core entry rendering function
@@ -563,7 +570,10 @@
 
   v(before-entry-skip)
 
-  if entry-type == "full" {
+  // Atomic: a CV entry is a single unit of meaning, so it is never split
+  // across a page boundary. If it does not fit, the whole entry moves to the
+  // next page — deliberate whitespace reads better than a severed entry.
+  block(breakable: false, width: 100%, if entry-type == "full" {
     // Full entry layout (original cv-entry logic)
     table(
       // uncomment to get back default settings
@@ -666,7 +676,7 @@
         )
       _create-entry-tag-list(tags, styles.tag)
     }
-  }
+  })
 }
 
 
@@ -790,13 +800,14 @@
     text(str)
   }
 
-  table(
+  // Atomic: a skill row never splits mid-way.
+  block(breakable: false, width: 100%, table(
     columns: (20%, 1fr),
     inset: 0pt,
     column-gutter: 10pt,
     stroke: none,
     skill-type-style(type), skill-info-style(info),
-  )
+  ))
   v(-6pt)
 }
 
@@ -891,7 +902,8 @@
     )
   }
 
-  table(
+  // Atomic: a certificate line never splits mid-way.
+  block(breakable: false, width: 100%, table(
     columns: (16%, 1fr, 15%),
     inset: 0pt,
     column-gutter: 10pt,
@@ -910,7 +922,7 @@
       ]
     },
     honor-location-style(location),
-  )
+  ))
   v(-6pt)
 }
 
