@@ -18,7 +18,7 @@ language = "en"
 # Which variant the live editor preview renders (Tinymist / VS Code cannot pass
 # --input). Must be one of the profile names below. Never affects ./compile.sh.
 # Available profiles: full, college
-preview_profile = "college"
+preview_profile = "full"
 
 [profiles.full]
     hide = []
