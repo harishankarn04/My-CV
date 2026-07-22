@@ -34,7 +34,7 @@
   header-font = font-config.header-font
   
   if _is-non-latin(lang) {
-    let nonLatinFont = metadata.lang.non_latin.font
+    let nonLatinFont = metadata.lang.at("non_latin", default: (:)).at("font", default: "")
     fonts.insert(2, nonLatinFont)
     header-font = nonLatinFont
   }
@@ -84,7 +84,7 @@
   let font-config = overwrite-fonts(metadata, _latin-font-list, _latin-header-font)
   fonts = font-config.regular-fonts
   if _is-non-latin(lang) {
-    let non-latin-font = metadata.lang.non_latin.font
+    let non-latin-font = metadata.lang.at("non_latin", default: (:)).at("font", default: "")
     fonts.insert(2, non-latin-font)
   }
 

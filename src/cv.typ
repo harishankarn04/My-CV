@@ -179,7 +179,7 @@
   let non-latin-name = ""
   let non-latin = _is-non-latin(metadata.language)
   if non-latin {
-    non-latin-name = metadata.lang.non_latin.name
+    non-latin-name = metadata.lang.at("non_latin", default: (:)).at("name", default: "")
   }
 
   // Injection

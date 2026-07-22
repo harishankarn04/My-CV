@@ -166,16 +166,6 @@ header_quote = "Analyste de données expérimenté à la recherche d'un emploi �
 cv_footer = "Résumé"
 letter_footer = "Lettre de motivation"
 
-[lang.zh]
-header_quote = "具有丰富经验的数据分析师，随时可入职"
-cv_footer = "简历"
-letter_footer = "申请信"
-
- # For languages that are not written in Latin script
- # Currently supported non-latin language codes: ("zh", "ja", "ko", "ru")
-[lang.non_latin]
-name = "王道尔"
-font = "Heiti SC"
 ```
 
 #pagebreak()
