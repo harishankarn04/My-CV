@@ -8,6 +8,22 @@
 
 #cv-section("Projects & Associations")
 
+// id: drone
+#if on("drone") { cv-entry(
+  title: [Embedded Systems Developer (Academic Project)],
+  society: [Precision Landing of Drone in Dynamic and Static Platforms ( Ongoing )],
+  date: [Jul 2026 – Present],
+  location: [Amrita Vishwa Vidyapeetham, Bangalore],
+  description: list(
+    [Started an academic project to develop an *autonomous drone system* for flight-path following and *precision landing*],
+    [Currently in the ideation phase, exploring approaches for *landing accuracy and platform detection*],
+    [Considering a *beacon-based navigation approach* as one option under evaluation for final descent],
+    [Reviewing *flight controller hardware options*, including Pixhawk, for future system integration]
+  ),
+
+  tags: ("Drone Systems", "Autonomous Systems", "Embedded Systems", "Flight Controllers", "Navigation Systems")
+) }
+
 // id: sdr
 #if on("sdr") { cv-entry(
   title: [Embedded Systems Developer (Academic Project)],
@@ -38,24 +54,6 @@
   ),
   tags: ("Python","Web Scraping", "LangChain", "FAISS", "RAG", "Hugging Face" )
 ) }
-
-
-// id: drone
-#if on("drone") { cv-entry(
-  title: [Embedded Systems Developer (Academic Project)],
-  society: [Precision Landing of Drone in Dynamic and Static Platforms ( Ongoing )],
-  date: [Jul 2026 – Present],
-  location: [Amrita Vishwa Vidyapeetham, Bangalore],
-  description: list(
-    [Started an academic project to develop an *autonomous drone system* for flight-path following and *precision landing*],
-    [Currently in the ideation phase, exploring approaches for *landing accuracy and platform detection*],
-    [Considering a *beacon-based navigation approach* as one option under evaluation for final descent],
-    [Reviewing *flight controller hardware options*, including Pixhawk, for future system integration]
-  ),
-
-  tags: ("Drone Systems", "Autonomous Systems", "Embedded Systems", "Flight Controllers", "Navigation Systems")
-) }
-
 
 // id: ble-car
 #if on("ble-car") { cv-entry(
