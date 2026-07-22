@@ -22,8 +22,8 @@
 // )
 
 
-// id: btech
-#if on("btech") { cv-entry(
+// id: Amrita
+#if on("Amrita") { cv-entry(
   title: [Bachelor's in Technology in Electronics and Communication  #h-bar() GPA : 7.36],
   society: [Amrita Vishwa Vidyapeetham],
   date: [Jul 2023 - Present],
@@ -36,8 +36,8 @@
 
   tags: ("Embedded Systems","Digital Signal Processing","IoT","Protocols","Networking","RTOS", "C", "Wireshark")) }
   
-// id: bsc-ds
-#if on("bsc-ds") { cv-entry(
+// id: IITM
+#if on("IITM") { cv-entry(
   title: [Bachelor of Science in Data Science #h-bar() GPA : 7.3],
   society: [Indian Institute of Technology],
   date: [Jul 2023 - Present],

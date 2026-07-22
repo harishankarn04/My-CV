@@ -35,8 +35,8 @@
 //   ),
 // )
 
-// id: digicomm
-#if on("digicomm") { cv-entry(
+// id: Digicomm
+#if on("Digicomm") { cv-entry(
   title: [Embedded Systems Intern],
   society: [Digicomm Semiconductors Pvt. Ltd ( 8 Months )],
   logo: image("../assets/logos/Digicomm_Semiconductor.png"),
@@ -53,8 +53,8 @@
     "STM32", "Bare-metal", "Linux", "Docker", "Embedded C", "Meson", "GDB" )
 ) }
 
-// id: optimus
-#if on("optimus") { cv-entry(
+// id: Optimus
+#if on("Optimus") { cv-entry(
   title: [Embedded Systems Intern],
   society: [OptimusLogic Systems Pvt Ltd],
 
@@ -68,13 +68,6 @@
     #image("../assets/logos/Optimus_Logic.png", fit: "contain")
   ]
 ],
-  // logo: box(
-  // width: 20pt,
-  // height: 20pt,
-  // clip: true,
-  // )[
-  //   #image("../assets/logos/Optimus_Logic.png", fit: "contain")
-  // ],
 
   date: [Jun 2026 – Present],
   location: [Bangalore, India],
