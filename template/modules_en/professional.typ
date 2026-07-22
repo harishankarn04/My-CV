@@ -6,6 +6,7 @@
 #let cv-entry = cv-entry.with(metadata: metadata)
 #let cv-entry-start = cv-entry-start.with(metadata: metadata)
 #let cv-entry-continued = cv-entry-continued.with(metadata: metadata)
+#import "../profiles.typ": on
 
 
 #cv-section("Internship Experience")
@@ -34,8 +35,8 @@
 //   ),
 // )
 
-// ------------ DIGICOMM ------------ //
-#cv-entry(
+// id: digicomm
+#if on("digicomm") { cv-entry(
   title: [Embedded Systems Intern],
   society: [Digicomm Semiconductors Pvt. Ltd ( 8 Months )],
   logo: image("../assets/logos/Digicomm_Semiconductor.png"),
@@ -50,11 +51,10 @@
   ),
   tags: ("ARM Cortex-M (M3/M4/M7)","NXP i.MX RT1064",
     "STM32", "Bare-metal", "Linux", "Docker", "Embedded C", "Meson", "GDB" )
-)
-// ------------ DIGICOMM ------------ //
+) }
 
-// ------------ OPTIMUS LOGIC ------------ //
-#cv-entry(
+// id: optimus
+#if on("optimus") { cv-entry(
   title: [Embedded Systems Intern],
   society: [OptimusLogic Systems Pvt Ltd],
 
@@ -86,5 +86,4 @@
   ),
 
   tags: ("OrCAD Capture", "Schematic Design", "RP2350", "LoRa", "Semtech LR2021")
-)
-// ------------ OPTIMUS LOGIC ------------ //
+) }

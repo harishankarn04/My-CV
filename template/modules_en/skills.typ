@@ -3,6 +3,7 @@
 #import "../../src/lib.typ": cv-section, cv-skill, cv-skill-with-level, cv-skill-tag, h-bar
 #let metadata = toml("../metadata.toml")
 #let cv-section = cv-section.with(metadata: metadata)
+#import "../profiles.typ": on
 
 
 #cv-section("Skills")
@@ -46,20 +47,23 @@
 // )
 
 
-  #cv-skill(
+// id: skill-languages
+#if on("skill-languages") { cv-skill(
   type: [Language & Libs],
   info: [*C* #h-bar() *Bare-metal C* #h-bar() *C++* #h-bar() OOAD #h-bar() Python #h-bar() Bash Scripting #h-bar() SQL],
-)
+) }
 
-#cv-skill(
+// id: skill-embedded
+#if on("skill-embedded") { cv-skill(
   type: [Embedded Systems],
   info: [*STM32* #h-bar() *NXP i.MX RT* #h-bar() ESP32 #h-bar() Cross-compiler #h-bar() *GDB* #h-bar() IoT #h-bar() Raspberry Pi]
-)
+) }
 
-#cv-skill(
+// id: skill-tools
+#if on("skill-tools") { cv-skill(
   type: [Software & Tools],
   info: [*Git* #h-bar() VS Code #h-bar() *MCUXpresso* #h-bar() *STM32CubeIDE* #h-bar() GNU Radio #h-bar()  MariaDB],
-)
+) }
 /*
 #cv-skill(
   type: [Data Science],
@@ -67,17 +71,20 @@
 )
 */
 
-  #cv-skill(
+// id: skill-os
+#if on("skill-os") { cv-skill(
   type: [OS & Network],
   info: [ *Linux* #h-bar() Windows #h-bar() Containerization #h-bar() Virtualization ],
-)
+) }
 
-#cv-skill(
+// id: skill-cloud
+#if on("skill-cloud") { cv-skill(
   type: [Cloud & Security],
   info: [*GCP* #h-bar() AWS #h-bar()  Basic Cybersecurity #h-bar() Open Source Security Tools #h-bar() WireShark],
-)
+) }
 
-#cv-skill(
+// id: skill-traits
+#if on("skill-traits") { cv-skill(
   type: [Personal Traits],
   info: [*Team Player* #h-bar() Problem Solving #h-bar() *Communicator* #h-bar()  Accountability #h-bar() Guitarist #h-bar() Artist],
-)
+) }

@@ -146,3 +146,23 @@ language = "en"
 [lang.non_latin]
     name = "王道尔"
     font = "Heiti SC"
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  PROFILES  —  tailored variants of this CV
+#
+#  Entries are VISIBLE BY DEFAULT. Listing an id under `hide` removes it from
+#  that profile only. Adding a new skill/project/cert needs NO change here.
+#
+#      ./compile.sh --list        show every id and what each profile hides
+#      ./compile.sh college       build the college variant
+#      ./compile.sh               build the full CV
+#
+#  A typo in an id below fails the build rather than silently doing nothing.
+# ─────────────────────────────────────────────────────────────────────────────
+
+[profiles.full]
+    hide = []
+
+[profiles.college]
+    hide = ["ble-car", "bi0s", "btech-desc", "bsc-ds-desc"]

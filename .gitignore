@@ -5,3 +5,4 @@ temp/
 # MacOS specific files (Apple sucks)
 .DS_Store
 .vscode/
+build/

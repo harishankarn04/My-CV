@@ -4,11 +4,12 @@
 #let metadata = toml("../metadata.toml")
 #let cv-section = cv-section.with(metadata: metadata)
 #let cv-entry = cv-entry.with(metadata: metadata)
+#import "../profiles.typ": on
 
 #cv-section("Projects & Associations")
 
-// ------------ SDR ------------ //
-#cv-entry(
+// id: sdr
+#if on("sdr") { cv-entry(
   title: [Embedded Systems Developer (Academic Project)],
   society: [Software-Defined Radio Transceiver for Image & Video ( 10 Months )],
   date: [Jul 2025 – April 2026],
@@ -20,12 +21,11 @@
   [Integrating video compression (*H.264, MJPEG*) and studying bandwidth–latency–quality trade-offs for wireless transmission]
 ),
     tags: ("Linux", "SDR", "GNU Radio", "GStreamer", "DSP", "Wireless Communication", "USRP" )
-)
-// ------------ SDR ------------ //
+) }
 
 
-// ------------ RAG ------------ //
-#cv-entry(
+// id: rag
+#if on("rag") { cv-entry(
   title: [Machine Learning Developer (Academic Project)],
   society: [Context-Aware RAG Chatbot System ( 4 Months )],
   date: [Jan 2025 – May 2025],
@@ -37,12 +37,11 @@
         [Built and tested local web interface to query real data from the university website, handling the project from start to finish]
   ),
   tags: ("Python","Web Scraping", "LangChain", "FAISS", "RAG", "Hugging Face" )
-)
-// ------------ RAG ------------ //
+) }
 
 
-// ------------ DRONE ------------ //
-#cv-entry(
+// id: drone
+#if on("drone") { cv-entry(
   title: [Embedded Systems Developer (Academic Project)],
   society: [Precision Landing of Drone in Dynamic and Static Platforms ( Ongoing )],
   date: [Jul 2026 – Present],
@@ -55,12 +54,11 @@
   ),
 
   tags: ("Drone Systems", "Autonomous Systems", "Embedded Systems", "Flight Controllers", "Navigation Systems")
-)
-// ------------ DRONE ------------ //
+) }
 
 
-// ------------ BLE CAR ------------ //
-#cv-entry(
+// id: ble-car
+#if on("ble-car") { cv-entry(
   title: [Embedded Systems Developer (Academic Project)],
   society: [BLE-Based Embedded Car System
  ( 2 Months )],
@@ -72,12 +70,11 @@
     [Created a mobile application using *MIT App Inventor* to communicate with and control the car via BLE]
   ),
     tags: ("C","Linux","ThingSpeak", "Raspberry Pi", "Bluetooth", "Robot Development",  "Edge Detection" )
-)
-// ------------ BLE CAR ------------ //
+) }
 
 
-// ------------ BI0S ------------ //
-#cv-entry(
+// id: bi0s
+#if on("bi0s") { cv-entry(
   title: [Member – Digital Forensics],
   society: [Team bi0s - Cybersecurity Research Community (1 year 2 months)],
   date: [Nov 2023 – Dec 2024],
@@ -89,5 +86,4 @@
 ),
 
   tags: ("Digital Forensics", "Cybersecurity", "Kali Linux", "Security Fundamentals", "WireShark")
-)
-// ------------ BI0S ------------ //
+) }
