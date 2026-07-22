@@ -21,7 +21,7 @@ language = "en"
 preview_profile = "full"
 
 [profiles.full]
-    hide = []
+    hide = ["ble-car", "bi0s"]
 
 [profiles.college]
     hide = ["rag", "ble-car", "bi0s", "Optimus"]

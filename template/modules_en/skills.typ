@@ -54,13 +54,13 @@
 // id: skill-languages
 #if on("skill-languages") { cv-skill(
   type: [Language & Libs],
-  info: [*C* #h-bar() *Bare-metal C* #h-bar() *C++* #h-bar() OOAD #h-bar() Python #h-bar() Bash Scripting #h-bar() SQL],
+  info: [*C* #h-bar() *Bare-metal C* #h-bar() *C++* /*#h-bar() OOAD*/ #h-bar() Python #h-bar() Bash Scripting #h-bar() SQL],
 ) }
 
 // id: skill-ai
 #if on("skill-ai") { cv-skill(
   type: [AI & LLM],
-  info: [*RAG Pipelines* #h-bar() LangChain #h-bar() FAISS #h-bar() Hugging Face #h-bar() LLM APIs #h-bar() AI-Assisted Development],
+  info: [RAG Pipelines #h-bar() LangChain #h-bar() FAISS #h-bar() Hugging Face #h-bar() LLM APIs #h-bar() AI-Assisted Development],
 ) }
 
 // id: skill-embedded
@@ -74,12 +74,6 @@
   type: [Software & Tools],
   info: [*Git* #h-bar() VS Code #h-bar() *MCUXpresso* #h-bar() *STM32CubeIDE* #h-bar() GNU Radio #h-bar()  MariaDB],
 ) }
-/*
-#cv-skill(
-  type: [Data Science],
-  info:[Transformers #h-bar() FAISS #h-bar() RAG Pipeline #h-bar() NLP Workflow#h-bar() MariaDB],
-)
-*/
 
 // id: skill-os
 #if on("skill-os") { cv-skill(
@@ -89,8 +83,8 @@
 
 // id: skill-cloud
 #if on("skill-cloud") { cv-skill(
-  type: [Cloud & Security],
-  info: [*GCP* #h-bar() AWS #h-bar()  Basic Cybersecurity #h-bar() Open Source Security Tools #h-bar() WireShark],
+  type: [Cloud & Platforms],
+  info: [*Google Cloud Platform* #h-bar() AWS  #h-bar() WireShark],
 ) }
 
 // id: skill-traits
