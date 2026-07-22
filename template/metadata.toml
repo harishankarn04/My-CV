@@ -4,20 +4,21 @@
 # INFO: value must matches folder suffix; i.e "zh" -> "./modules_zh"
 language = "en"
 
-# Which variant the live editor preview shows (Tinymist / VS Code cannot pass
-# --input). Must be one of the [profiles.*] names defined just below.
-# Does not affect ./compile.sh.
-preview_profile = "college"
-
-# ── PROFILES ─────────────────────────────────────────────────────────────────
-# Tailored variants of this CV. Entries are VISIBLE BY DEFAULT — list an id
-# under `hide` to cut it from that variant only. Adding a new skill, project or
-# certificate needs no change here.
+# ──────────────────────────────── PROFILES ─────────────────────────────────
+# Tailored variants of this CV, so one source tree covers every application.
+# Available profiles: full, college
+#
+# Entries are VISIBLE BY DEFAULT — list an id under `hide` to cut it from that
+# variant only. Adding a new skill, project or certificate needs no change here.
+# An id that matches no entry fails the build instead of silently doing nothing.
 #
 #   ./compile.sh --list      every id, and which variants hide it
 #   ./compile.sh college     build a variant
-#
-# An id that matches no entry fails the build instead of silently doing nothing.
+#   ./compile.sh             build the full CV
+
+# Which variant the live editor preview renders (Tinymist / VS Code cannot pass
+# --input). Must be one of the profile names below. Never affects ./compile.sh.
+preview_profile = "college"
 
 [profiles.full]
     hide = []
@@ -25,9 +26,11 @@ preview_profile = "college"
 [profiles.college]
     hide = ["rag", "ble-car", "bi0s", "Optimus"]
 
-# Add new profiles here:
+# Add new profiles here — the name becomes the build command and the filename
+# suffix, e.g. [profiles.nvidia] -> ./compile.sh nvidia
 #   [profiles.nvidia]
 #       hide = []
+# ──────────────────────────────── PROFILES ─────────────────────────────────
 
 [layout]
     # Optional values: skyblue, red, nephritis, concrete, darknight
@@ -82,7 +85,7 @@ preview_profile = "college"
     inject_ai_prompt = false
 
     # Decide if you want to inject keywords or not
-    inject_keywords = true
+    inject_keywords = false
     injected_keywords_list = [
     "Embedded Systems", "Bare-Metal Programming",
     "ARM Cortex-M", "Cortex-M4", "Cortex-M7",
