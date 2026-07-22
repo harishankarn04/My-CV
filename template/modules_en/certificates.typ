@@ -7,6 +7,9 @@
 #import "../profiles.typ": on
 
 
+// Certifications move as ONE unit: a list of one-line entries torn across a
+// page reads like a broken table, so the whole section relocates instead.
+#block(breakable: false, width: 100%)[
 #cv-section("Trainings & Certifications")
 
 // #cv-honor(
@@ -77,3 +80,4 @@
   url: "https://drive.google.com/file/d/1oKKR940Dt8y-v5sihoKXuE2L3GROxbE0/view?usp=sharing",
   location: [Online],
 ) }
+]

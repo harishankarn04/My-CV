@@ -7,6 +7,8 @@
 #import "../profiles.typ": on
 
 
+// Education moves as ONE unit — it is short and reads as a single block.
+#block(breakable: false, width: 100%)[
 #cv-section("Education")
 
 // #cv-entry(
@@ -47,3 +49,4 @@
   //   [Exploring the intersection of data science and technology, applying statistical and computational techniques to analyze complex datasets and develop intelligent solutions],
   // ),
     tags: ("Statistical Analysis","Data Visualization","Machine Learning","Deep Learning","RDBMS","Linux")) }
+]
