@@ -57,6 +57,12 @@
   info: [*C* #h-bar() *Bare-metal C* #h-bar() *C++* #h-bar() OOAD #h-bar() Python #h-bar() Bash Scripting #h-bar() SQL],
 ) }
 
+// id: skill-ai
+#if on("skill-ai") { cv-skill(
+  type: [AI & LLM],
+  info: [*RAG Pipelines* #h-bar() LangChain #h-bar() FAISS #h-bar() Hugging Face #h-bar() LLM APIs #h-bar() AI-Assisted Development],
+) }
+
 // id: skill-embedded
 #if on("skill-embedded") { cv-skill(
   type: [Embedded Systems],
