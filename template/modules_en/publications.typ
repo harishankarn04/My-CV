@@ -5,6 +5,9 @@
 #let cv-section = cv-section.with(metadata: metadata)
 
 
+// Publications move as ONE unit: like Skills and Certifications these are
+// short reference lines, and a list torn across a page reads as broken.
+#block(breakable: false, width: 100%)[
 #cv-section("Publications")
 
 // Example 1: Selected publications with custom style
@@ -25,3 +28,4 @@
 //   ref-style: "apa",
 //   ref-full: true,
 // )
+]
