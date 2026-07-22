@@ -42,7 +42,7 @@
   date: [Jun 2025 – Jan 2026],
   location: [Bangalore, India],
   description: list(
-  [Performed *STM32 board bring-up* using Embedded C and configured communication protocols (*UART, SPI, I2C, ADC*)],
+  [*STM32F429 board bring-up* and baremetal implementation for communication protocols (*UART, SPI, I2C, ADC*)],
   [Used *Cross-compiling* toolchains for target hardware, debug firmware issues, and performed system-level validation],
   [Engineered a *CMake*-based CI/CD build system using *Docker* for bare-metal projects],
   [Built a *text rendering subsystem* on *NXP i.MX* by porting and configuring *HarfBuzz* and *FreeType* to enable *Indic* scripts],
