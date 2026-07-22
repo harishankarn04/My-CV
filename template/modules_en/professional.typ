@@ -85,6 +85,6 @@
     [Ran and cleared all *DRC/ERC checks* on the schematic prior to handoff for layout]
   ),
 
-  tags: ("OrCAD Capture", "Schematic Design", "RP2350", "LoRa", "Semtech LR2021", "RF Fundamentals")
+  tags: ("OrCAD Capture", "Schematic Design", "RP2350", "LoRa", "Semtech LR2021")
 )
 // ------------ OPTIMUS LOGIC ------------ //
