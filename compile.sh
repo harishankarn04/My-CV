@@ -57,7 +57,7 @@ typst compile --root . --font-path template/fonts \
         echo "❌ CV compilation failed"; exit 1; }
 
 # Page count straight out of the PDF page tree — cosmetic, so a miss is harmless.
-PAGES=$(LC_ALL=C strings "$OUT" | grep -o '/Count [0-9][0-9]*' | head -1 | awk '{print $2}')
+PAGES=$(LC_ALL=C grep -ao '/Count [0-9][0-9]*' "$OUT" | head -1 | awk '{print $2}')
 [ -z "$PAGES" ] && PAGES="?"
 echo "✅ [$PROFILE] CV -> $OUT  ($PAGES page(s))"
 

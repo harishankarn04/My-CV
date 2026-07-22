@@ -138,11 +138,6 @@ END {
             if (!(parts[2] in seen)) {
                 printf "[X] Profile [%s] hides \"%s\", but no entry uses that id.\n",
                        parts[1], parts[2]
-                near = ""
-                for (j = 1; j <= icount; j++)
-                    if (substr(tolower(iorder[j]), 1, 4) == substr(tolower(parts[2]), 1, 4))
-                        near = near (near == "" ? "" : ", ") iorder[j]
-                if (near != "") printf "    Did you mean: %s\n", near
                 bad = 1
             }
         }
