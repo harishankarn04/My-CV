@@ -36,7 +36,3 @@
 
 /// True when `id` should be rendered under the active profile.
 #let on(id) = id not in _hidden
-
-/// Use for optional sub-parts of an entry (e.g. a description block).
-/// Returns "" when hidden, which is what cv-entry expects for "no description".
-#let opt(id, body) = if on(id) { body } else { "" }

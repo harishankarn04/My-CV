@@ -165,4 +165,8 @@ language = "en"
     hide = []
 
 [profiles.college]
-    hide = ["ble-car", "bi0s", "btech-desc", "bsc-ds-desc"]
+    hide = ["ble-car", "bi0s"]
+
+#  Add new profiles with here
+#   [profiles.'profile_name']
+#       hide = []

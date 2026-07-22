@@ -20,8 +20,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 MODULES = ROOT / "template" / "modules_en"
 META = ROOT / "template" / "metadata.toml"
 
-# `on("x")` / `opt("x", ...)`, but NOT the "on(" hiding inside cv-secti-on(
-ID_RE = re.compile(r'(?:^|[^A-Za-z])(?:on|opt)\("([^"]+)"')
+# `on("x")`, but NOT the "on(" hiding inside cv-secti-on(
+ID_RE = re.compile(r'(?:^|[^A-Za-z])on\("([^"]+)"')
 
 
 # Which field names an entry best, per module. In projects/professional the
@@ -69,12 +69,7 @@ def ids_by_module():
             if i in seen:
                 continue
             seen.add(i)
-            if i.endswith("-desc"):
-                # A sub-toggle for the bullet list inside its parent entry.
-                label = "↳ description bullets"
-            else:
-                label = _label(txt, m.end(), f.stem)
-            found.append((i, label))
+            found.append((i, _label(txt, m.end(), f.stem)))
         if found:
             out[f.stem] = found
     return out
