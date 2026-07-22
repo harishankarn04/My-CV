@@ -22,9 +22,9 @@
 
 
 #cv-entry(
-  title: [Bachelor's in Technology in Electronics and Communication  #h-bar() GPA : 7.23],
+  title: [Bachelor's in Technology in Electronics and Communication  #h-bar() GPA : 7.36],
   society: [Amrita Vishwa Vidyapeetham],
-  date: [July 2023 - Present],
+  date: [Jul 2023 - Present],
   location: [Bangalore, India],
   logo: image("../assets/logos/Amrita_Vishwa_Vidyapeetham_-_Logo.png"),
   // description: list(
@@ -37,7 +37,7 @@
 #cv-entry(
   title: [Bachelor of Science in Data Science #h-bar() GPA : 7.3],
   society: [Indian Institute of Technology],
-  date: [July 2023 - Present],
+  date: [Jul 2023 - Present],
   location: [Madras, India],
   logo: image("../assets/logos/IIT_Madras_Logo.png"),
   // description: list(
