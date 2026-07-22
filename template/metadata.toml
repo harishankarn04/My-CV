@@ -6,7 +6,6 @@ language = "en"
 
 # ──────────────────────────────── PROFILES ─────────────────────────────────
 # Tailored variants of this CV, so one source tree covers every application.
-# Available profiles: full, college
 #
 # Entries are VISIBLE BY DEFAULT — list an id under `hide` to cut it from that
 # variant only. Adding a new skill, project or certificate needs no change here.
@@ -18,6 +17,7 @@ language = "en"
 
 # Which variant the live editor preview renders (Tinymist / VS Code cannot pass
 # --input). Must be one of the profile names below. Never affects ./compile.sh.
+# Available profiles: full, college
 preview_profile = "college"
 
 [profiles.full]
