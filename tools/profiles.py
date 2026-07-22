@@ -24,20 +24,64 @@ META = ROOT / "template" / "metadata.toml"
 ID_RE = re.compile(r'(?:^|[^A-Za-z])(?:on|opt)\("([^"]+)"')
 
 
+# Which field names an entry best, per module. In projects/professional the
+# 'title' is a generic role ("Embedded Systems Intern"), so 'society' — the
+# company or project name — is the useful label. Elsewhere 'title' is the name.
+FIELD_ORDER = {
+    "professional": ("society", "title"),
+    "projects": ("society", "title"),
+    "education": ("title", "society"),
+    "certificates": ("title", "issuer"),
+    "skills": ("type",),
+}
+
+
+def _label(text, pos, module):
+    """Human-readable name of the entry an id belongs to.
+
+    An id like 'cert-isro' means nothing on its own, so we pull the entry's own
+    naming field out of the source and show it alongside.
+    """
+    window = text[pos : pos + 700]
+    # Stop at the next entry so we never borrow the following one's title.
+    nxt = re.search(r"\n\s*(?://\s*id:|#if on\()", window)
+    if nxt:
+        window = window[: nxt.start()]
+
+    for field in FIELD_ORDER.get(module, ("title", "society", "type")):
+        m = re.search(re.escape(field) + r":\s*\[([^\]]*)\]", window)
+        if m:
+            s = re.sub(r"#h-bar\(\)|\*|#linebreak\(\)", " ", m.group(1))
+            s = " ".join(s.split())
+            if s:
+                return s[:44] + ("…" if len(s) > 44 else "")
+    return ""
+
+
 def ids_by_module():
     out = {}
     for f in sorted(MODULES.glob("*.typ")):
+        txt = f.read_text()
         found = []
-        for m in ID_RE.finditer(f.read_text()):
-            if m.group(1) not in found:
-                found.append(m.group(1))
+        seen = set()
+        for m in ID_RE.finditer(txt):
+            i = m.group(1)
+            if i in seen:
+                continue
+            seen.add(i)
+            if i.endswith("-desc"):
+                # A sub-toggle for the bullet list inside its parent entry.
+                label = "↳ description bullets"
+            else:
+                label = _label(txt, m.end(), f.stem)
+            found.append((i, label))
         if found:
             out[f.stem] = found
     return out
 
 
 def all_ids():
-    return {i for v in ids_by_module().values() for i in v}
+    return {i for v in ids_by_module().values() for i, _ in v}
 
 
 def profiles():
@@ -57,18 +101,24 @@ def cmd_list():
     profs = profiles()
     names = sorted(profs)
     mods = ids_by_module()
-    width = max((len(i) for v in mods.values() for i in v), default=10) + 2
+    width = max((len(i) for v in mods.values() for i, _ in v), default=10) + 2
+    lwidth = max((len(l) for v in mods.values() for _, l in v), default=10) + 2
 
     print()
     print("  Every toggleable id. 'hidden' = cut from that profile.")
     print()
-    print("  " + "ID".ljust(width) + "".join(n.ljust(10) for n in names))
-    print("  " + "-" * (width + 10 * len(names)))
+    print(
+        "  "
+        + "ID".ljust(width)
+        + "ENTRY".ljust(lwidth)
+        + "".join(n.ljust(10) for n in names)
+    )
+    print("  " + "-" * (width + lwidth + 10 * len(names)))
     for mod, ids in mods.items():
         print()
         print(f"  {mod}")
-        for i in ids:
-            row = "  " + i.ljust(width)
+        for i, label in ids:
+            row = "  " + i.ljust(width) + label.ljust(lwidth)
             for n in names:
                 row += ("hidden" if i in profs[n] else "shown").ljust(10)
             print(row)
