@@ -7,10 +7,11 @@
 
 #cv-section("Projects & Associations")
 
+// ------------ SDR ------------ //
 #cv-entry(
   title: [Embedded Systems Developer (Academic Project)],
-  society: [Software-Defined Radio Transceiver for Image & Video],
-  date: [July 2025 – Present],
+  society: [Software-Defined Radio Transceiver for Image & Video ( 10 Months )],
+  date: [Jul 2025 – April 2026],
    location: [Amrita Vishwa Vidyapeetham, Bangalore],
   description: list(
   [Designing and develop SDR-based transceiver for real-time image and video transmission using *GNU Radio*],
@@ -20,7 +21,10 @@
 ),
     tags: ("Linux", "SDR", "GNU Radio", "GStreamer", "DSP", "Wireless Communication", "USRP" )
 )
+// ------------ SDR ------------ //
 
+
+// ------------ RAG ------------ //
 #cv-entry(
   title: [Machine Learning Developer (Academic Project)],
   society: [Context-Aware RAG Chatbot System ( 4 Months )],
@@ -34,32 +38,56 @@
   ),
   tags: ("Python","Web Scraping", "LangChain", "FAISS", "RAG", "Hugging Face" )
 )
+// ------------ RAG ------------ //
 
 
+// ------------ DRONE ------------ //
 #cv-entry(
   title: [Embedded Systems Developer (Academic Project)],
-  society: [BLE-Based Embedded Car System
- ( 2 Months )],
-  date: [Jan 2024 – May 2024],
-   location: [Amrita Vishwa Vidyapeetham, Bangalore],
+  society: [Precision Landing of Drone in Dynamic and Static Platforms ( Ongoing )],
+  date: [Jul 2026 – Present],
+  location: [Amrita Vishwa Vidyapeetham, Bangalore],
   description: list(
-    [Designed and prototyped an embedded-system-based *BLE-controlled car* and adaptive power management],
-    [Integrated sensors with microcontroller and established real-time actuation and decision logic],
-    [Created a mobile application using *MIT App Inventor* to communicate with and control the car via BLE]
+    [Started an academic project to develop an *autonomous drone system* for flight-path following and *precision landing*],
+    [Currently in the ideation phase, exploring approaches for *landing accuracy and platform detection*],
+    [Considering a *beacon-based navigation approach* as one option under evaluation for final descent],
+    [Reviewing *flight controller hardware options*, including Pixhawk, for future system integration]
   ),
-    tags: ("C","Linux","ThingSpeak", "Raspberry Pi", "Bluetooth", "Robot Development",  "Edge Detection" )
-)
 
-#cv-entry(
-  title: [Member – Digital Forensics],
-  society: [Team bi0s - Cybersecurity Research Community (1 year 2 months)],
-  date: [Nov 2023 – Dec 2024],
-   location: [Amrita Vishwa Vidyapeetham, Bangalore],
-  description: list(
-  [Contributed as part of the forensics team, gaining exposure to *cybersecurity workflows and investigative practices*],
-  [Participated in internal training and introductory problem-solving related to *digital forensics* and security],
-  [Worked on practice exercises and guided tasks to understand basic evidence handling and forensic processes]
-),
-
-  tags: ("Digital Forensics", "Cybersecurity", "Kali Linux", "Security Fundamentals", "WireShark")
+  tags: ("Drone Systems", "Autonomous Systems", "Embedded Systems", "Flight Controllers", "Navigation Systems")
 )
+// ------------ DRONE ------------ //
+
+
+// ------------ BLE CAR ------------ //
+// #cv-entry(
+//   title: [Embedded Systems Developer (Academic Project)],
+//   society: [BLE-Based Embedded Car System
+//  ( 2 Months )],
+//   date: [Jan 2024 – May 2024],
+//    location: [Amrita Vishwa Vidyapeetham, Bangalore],
+//   description: list(
+//     [Designed and prototyped an embedded-system-based *BLE-controlled car* and adaptive power management],
+//     [Integrated sensors with microcontroller and established real-time actuation and decision logic],
+//     [Created a mobile application using *MIT App Inventor* to communicate with and control the car via BLE]
+//   ),
+//     tags: ("C","Linux","ThingSpeak", "Raspberry Pi", "Bluetooth", "Robot Development",  "Edge Detection" )
+// )
+// ------------ BLE CAR ------------ //
+
+
+// ------------ BI0S ------------ //
+// #cv-entry(
+//   title: [Member – Digital Forensics],
+//   society: [Team bi0s - Cybersecurity Research Community (1 year 2 months)],
+//   date: [Nov 2023 – Dec 2024],
+//    location: [Amrita Vishwa Vidyapeetham, Bangalore],
+//   description: list(
+//   [Contributed as part of the forensics team, gaining exposure to *cybersecurity workflows and investigative practices*],
+//   [Participated in internal training and introductory problem-solving related to *digital forensics* and security],
+//   [Worked on practice exercises and guided tasks to understand basic evidence handling and forensic processes]
+// ),
+
+//   tags: ("Digital Forensics", "Cybersecurity", "Kali Linux", "Security Fundamentals", "WireShark")
+// )
+// ------------ BI0S ------------ //
