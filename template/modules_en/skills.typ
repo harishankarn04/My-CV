@@ -60,7 +60,7 @@
 // id: skill-ai
 #if on("skill-ai") { cv-skill(
   type: [AI & LLM],
-  info: [RAG Pipelines #h-bar() LangChain #h-bar() FAISS #h-bar() Hugging Face #h-bar() LLM APIs #h-bar() AI-Assisted Development],
+  info: [*Claude* #h-bar() Vibe coding #h-bar() Ollama #h-bar() RAG Pipelines #h-bar() LangChain #h-bar() FAISS],
 ) }
 
 // id: skill-embedded
@@ -72,7 +72,7 @@
 // id: skill-tools
 #if on("skill-tools") { cv-skill(
   type: [Software & Tools],
-  info: [*Git* #h-bar() VS Code #h-bar() *MCUXpresso* #h-bar() *STM32CubeIDE* #h-bar() GNU Radio #h-bar()  MariaDB],
+  info: [*Git* #h-bar() VS Code #h-bar() *MCUXpresso* #h-bar() *STM32CubeIDE* #h-bar() GNU Radio],
 ) }
 
 // id: skill-os
