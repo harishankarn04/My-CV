@@ -35,28 +35,10 @@
 //   ),
 // )
 
-// id: Digicomm
-#if on("Digicomm") { cv-entry(
-  title: [Embedded Systems Intern],
-  society: [Digicomm Semiconductors Pvt. Ltd ( 8 Months )],
-  logo: image("../assets/logos/Digicomm_Semiconductor.png"),
-  date: [Jun 2025 – Jan 2026],
-  location: [Bangalore, India],
-  description: list(
-  [*STM32F429 board bring-up* and baremetal implementation for communication protocols (*UART, SPI, I2C, ADC*)],
-  [Used *Cross-compiling* toolchains for target hardware, debug firmware issues, and performed system-level validation],
-  [Engineered a *CMake*-based CI/CD build system using *Docker* for bare-metal projects],
-  [Built a *text rendering subsystem* on *NXP i.MX* by porting and configuring *HarfBuzz* and *FreeType* to enable *Indic* scripts],
-  [Implemented text shaping and glyph rendering flow to operate reliably in a resource-constrained, *OS-independent* environment]
-  ),
-  tags: ("ARM Cortex-M (M3/M4/M7)","NXP i.MX RT1064",
-    "STM32", "Bare-metal", "Linux", "Docker", "Embedded C", "Meson", "GDB" )
-) }
-
 // id: Optimus
 #if on("Optimus") { cv-entry(
   title: [Embedded Systems Intern],
-  society: [OptimusLogic Systems Pvt Ltd],
+  society: [OptimusLogic Systems Pvt Ltd (Ongoing) - Hybrid],
 
   // Making Optmius image fit properly with custom sizing
   logo: box(
@@ -72,11 +54,28 @@
   date: [Jun 2026 – Present],
   location: [Bangalore, India],
   description: list(
-    [Worked with *OrCAD Capture* to replicate and modify a reference schematic for a *LoRa-based evaluation board*],
-    [Replaced the reference Xiao module with an *RP2350 (Raspberry Pi Pico 2)* in the schematic],
-    [Reproduced the *LR2021 LoRa transceiver* RF section based on Semtech's reference design],
-    [Ran and cleared all *DRC/ERC checks* on the schematic prior to handoff for layout]
-  ),
+  [Replicate and adapt a reference schematic for a *Baikal-U (BE-U1000)* microcontroller eval board in OrCAD, sourcing/modifying symbols],
+  [Adapted a reference schematic for a *LoRa* evaluation board in *OrCAD Capture*, integrating Semtech's *LR2021* transceiver with an *RP2350* (Raspberry Pi Pico 2) MCU, including power regulation, USB interfacing, and crystal oscillator circuitry],
+  [Ran and cleared all *DRC/ERC checks* on the schematic prior to handoff for layout],
+),
 
-  tags: ("OrCAD Capture", "Schematic Design", "RP2350", "LoRa", "Semtech LR2021")
+  tags: ("OrCAD Capture", "Schematic Design", "Claude Code", "LoRa", "Semtech LR2021", "Baikal-U")
+) }
+
+// id: Digicomm
+#if on("Digicomm") { cv-entry(
+  title: [Embedded Systems Intern],
+  society: [Digicomm Semiconductors Pvt. Ltd ( 8 Months ) - Hybrid],
+  logo: image("../assets/logos/Digicomm_Semiconductor.png"),
+  date: [Jun 2025 – Jan 2026],
+  location: [Bangalore, India],
+  description: list(
+  [*STM32F429 board bring-up* and baremetal implementation for communication protocols (*UART, SPI, I2C, ADC*)],
+  [Used *cross-compiling* toolchains for target hardware, debugged firmware issues related to flash configuration and RAM/memory management],
+  [Engineered a *CMake*-based CI/CD build system using *Docker* for bare-metal projects],
+  [Built a *text rendering subsystem* on *NXP i.MX* by porting and configuring *HarfBuzz* and *FreeType* to enable *Indic* scripts],
+  [Implemented text shaping and glyph rendering flow for a resource-constrained, *OS-independent* environment]
+  ),
+  tags: ("ARM Cortex-M (M3/M4/M7)","NXP i.MX RT1064",
+    "STM32", "Bare-metal", "Linux", "Docker", "Embedded C", "Meson", "GDB" )
 ) }
