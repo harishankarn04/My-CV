@@ -19,14 +19,25 @@
 //   url: "https://aws.amazon.com/certification/",
 //   location: [Online],
 // )
-// id: cert-nvidia
-#if on("cert-nvidia") { cv-honor(
+// 
+// id: cert-nvidia-robot
+#if on("cert-nvidia-robot") { cv-honor(
+  date: [2026],
+  title: [A Beginner's Guide to Autonomous Robots],
+  issuer: [NVIDIA],
+  url:"",
+  location: [Online],
+) }
+
+// id: cert-nvidia-conv
+#if on("cert-nvidia-conv") { cv-honor(
   date: [2025],
   title: [Building Conversational AI Application],
   issuer: [NVIDIA],
   url: "https://drive.google.com/file/d/1eM2tkbLaZki_7JZ4Dg3lW8kldgbd34WA/view?usp=share_link",
   location: [Online],
 ) }
+
 // id: cert-iisc
 #if on("cert-iisc") { cv-honor(
   date: [2024],
