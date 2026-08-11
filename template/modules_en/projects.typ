@@ -15,9 +15,9 @@
   date: [Jul 2026 – Present],
   location: [Amrita Vishwa Vidyapeetham, Bangalore],
   description: list(
-    [Started an academic project to develop an *autonomous drone system* for flight-path following and *precision landing*],
-    [Currently in the ideation phase, exploring approaches for *landing accuracy and platform detection*],
-    [Considering a *beacon-based navigation approach* as one option under evaluation for final descent],
+    [Academic project to develop an *autonomous drone system* for flight-path following and *precision landing*],
+    [Currently in the inception phase, exploring approaches for *landing accuracy and platform detection*],
+    [Evaluating a *beacon-based navigation approach* for final touchdown],
     [Reviewing *flight controller hardware options*, including Pixhawk, for future system integration]
   ),
 
@@ -28,15 +28,16 @@
 #if on("sdr") { cv-entry(
   title: [Embedded Systems Developer (Academic Project)],
   society: [Software-Defined Radio Transceiver for Image & Video ( 10 Months )],
-  date: [Jul 2025 – April 2026],
+  date: [Jul 2025 – Apr 2026],
    location: [Amrita Vishwa Vidyapeetham, Bangalore],
   description: list(
-  [Designing and develop SDR-based transceiver for real-time image and video transmission using *GNU Radio*],
-  [Implementing end-to-end communication chain (encoding → modulation → channel → demodulation → decoding)],
-  [Evaluating modulation schemes (*GMSK, QAM, OFDM*), analyzing noise sensitivity, packet loss, synchronization, and QoS],
-  [Integrating video compression (*H.264, MJPEG*) and studying bandwidth–latency–quality trade-offs for wireless transmission]
+  [Built a real-time image and video transmission system on a *USRP B210* platform using *GNU Radio*],
+  [Implemented the end-to-end communication chain (encoding → modulation → channel → demodulation → decoding)],
+  [Implemented GMSK modulation for real-time image and video transmission over the SDR chain
+],
+  [Integrated video compression (*H.264, MJPEG*) and studied bandwidth–latency–quality trade-offs for wireless transmission],
 ),
-    tags: ("Linux", "SDR", "GNU Radio", "GStreamer", "DSP", "Wireless Communication", "USRP" )
+    tags: ("Linux", "SDR", "GNU Radio","DSP", "Wireless Communication", "USRP" )
 ) }
 
 
@@ -50,7 +51,7 @@
         [Deployed a RAG chatbot with web scraping and an ingestion pipeline using sitemaps & HTML parsing],
         [Developed *document chunking and FAISS-based vector retrieval* to enable relevant, up-to-date context retrieval],
         [*LangChain* orchestration for embedding, retrieval, and LLM interaction with support for periodic knowledge base refresh],
-        [Built and tested local web interface to query real data from the university website, handling the project from start to finish]
+        [Built and tested local web interface to query real data from the university website]
   ),
   tags: ("Python","Web Scraping", "LangChain", "FAISS", "RAG", "Hugging Face" )
 ) }
